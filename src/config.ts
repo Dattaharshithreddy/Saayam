@@ -1,7 +1,7 @@
 import Constants from 'expo-constants';
 
 /** Public URL of the privacy policy (host docs/privacy-policy.html, e.g. on GitHub Pages). */
-export const PRIVACY_URL = process.env.EXPO_PUBLIC_PRIVACY_URL || 'https://dattaharshithreddy.github.io/saayam/privacy-policy.html';
+export const PRIVACY_URL = process.env.EXPO_PUBLIC_PRIVACY_URL || 'https://dattaharshithreddy.github.io/Saayam/privacy-policy.html';
 
 /** Where reports and guide requests are emailed; also shown on the About screen. */
 export const CONTACT_EMAIL = process.env.EXPO_PUBLIC_CONTACT_EMAIL || 'dattaharshithreddy@gmail.com';
