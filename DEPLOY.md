@@ -17,7 +17,7 @@ Play needs a public URL.
 npm install -g eas-cli
 eas login                      # free Expo account
 eas init                       # links the project, adds projectId to app.json
-# edit eas.json: replace YOUR-PRIVACY-POLICY-URL and YOUR-CONTACT-EMAIL
+# eas.json already has your privacy URL and contact email
 eas build -p android --profile preview      # .apk to install on your own phone and test
 eas build -p android --profile production   # .aab for Google Play
 ```

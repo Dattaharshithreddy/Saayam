@@ -27,24 +27,25 @@ Every guide tells you:
 • Who can apply
 • Documents to carry — with a tick-off checklist
 • Fees and benefit amounts
-• Numbered steps
+• A full walkthrough from start to finish, stage by stage — every click and every counter
+• A worked cost example, common problems and how to fix them, and what to do afterwards
 • Where to go — office or official website
 • How long it takes
 • Tips to avoid middlemen and common mistakes
 • Official links and helpline numbers
 
-120+ guides, including:
+125+ guides, including:
 🏠 Land & property — registration, name mistakes in deeds, mutation (1B/Adangal), EC, 22A prohibited land, subdivision, Will/GPA
 📜 Certificates — caste, income, EWS, OBC, birth & death, legal heir, marriage, name change, disability (SADAREM)
 🏥 Health — NTR Vaidya Seva, Ayushman Bharat, Vay Vandana (70+), CM Relief Fund, 108/104
-☀️ Electricity — rooftop solar subsidy (PM Surya Ghar), new connections, borewell connections
+☀️ Electricity — rooftop solar subsidy (PM Surya Ghar), new connections, borewell connections, high bills, meter and supply complaints
 🌾 Farmers — Annadata Sukhibhava, PM-KISAN, crop insurance, paddy at MSP, tenant farmer card, KCC, subsidies
 🤝 Welfare — NTR Bharosa pensions, Talliki Vandanam, free bus, housing, rural job guarantee, seniors, women
 🍚 Rice card, Deepam free gas, Ujjwala
 🎓 Scholarships, EAPCET / ICET / POLYCET / NEET admissions, RTE free seats, hostels, PM Internship, government jobs
-🚗 Driving licence, RC transfer, challans
-🛡️ Emergency numbers, FIR, PGRS complaints, RTI, consumer complaints, free legal aid
-🏦 Jan Dhan, ₹20 insurance, Atal Pension, PF withdrawal
+🚗 Driving licence, lorry/bus licence, RC transfer, remove bank loan from RC, permit, fitness and road tax for autos and lorries, challans
+🛡️ Emergency numbers, FIR, police verification, PGRS complaints, RTI, consumer complaints, free legal aid
+🏦 Jan Dhan, ₹20 insurance, Atal Pension, PF withdrawal, income tax return & TDS refund
 💼 Mudra, PMEGP, food-processing subsidy, BC/SC/ST/minority corporation loans, DWCRA / SHG loans
 🛕 TTD & temple darshan booking, safe Gulf jobs, NRI insurance & property
 🪪 Aadhaar (lost card, bank linking for scheme money, children's update, misuse lock), PAN, passport, voter ID, DigiLocker
@@ -89,24 +90,25 @@ AP & కేంద్ర ప్రభుత్వ సేవలకు తెలు
 • ఎవరు అర్హులు
 • తీసుకెళ్లాల్సిన పత్రాలు — టిక్ చేసే చెక్‌లిస్ట్‌తో
 • ఫీజు, లబ్ధి మొత్తాలు
-• దశల వారీ ప్రక్రియ
+• మొదటి నుండి చివరి వరకు దశలవారీ పూర్తి మార్గదర్శి — ప్రతి క్లిక్, ప్రతి కౌంటర్
+• ఖర్చు ఉదాహరణ, సాధారణ సమస్యలు-పరిష్కారాలు, తర్వాత ఏం చేయాలి
 • ఎక్కడికి వెళ్లాలి — ఆఫీసు లేదా అధికారిక వెబ్‌సైట్
 • ఎంత సమయం పడుతుంది
 • మధ్యవర్తులు, సాధారణ తప్పుల నుండి జాగ్రత్తలు
 • అధికారిక లింకులు, హెల్ప్‌లైన్ నంబర్లు
 
-120కి పైగా గైడ్‌లు:
+125కి పైగా గైడ్‌లు:
 🏠 భూమి & ఆస్తి — రిజిస్ట్రేషన్, డీడ్‌లో పేరు తప్పు, మ్యుటేషన్ (1B/అడంగల్), EC, 22A నిషేధిత భూమి, సబ్‌డివిజన్, వీలునామా/GPA
 📜 సర్టిఫికెట్లు — కుల, ఆదాయ, EWS, OBC, జనన & మరణ, వారసత్వ, వివాహ, పేరు మార్పు, వికలాంగ (SADAREM)
 🏥 ఆరోగ్యం — NTR వైద్య సేవ, ఆయుష్మాన్ భారత్, వయ వందన (70+), ముఖ్యమంత్రి సహాయ నిధి, 108/104
-☀️ విద్యుత్ — రూఫ్‌టాప్ సోలార్ సబ్సిడీ, కొత్త కనెక్షన్లు, బోరుబావి కనెక్షన్లు
+☀️ విద్యుత్ — రూఫ్‌టాప్ సోలార్ సబ్సిడీ, కొత్త కనెక్షన్లు, బోరుబావి కనెక్షన్లు, ఎక్కువ బిల్లు, మీటర్, సరఫరా ఫిర్యాదులు
 🌾 రైతులు — అన్నదాత సుఖీభవ, PM-KISAN, పంట బీమా, MSPకి ధాన్యం, కౌలు రైతు కార్డు, KCC, సబ్సిడీలు
 🤝 సంక్షేమం — NTR భరోసా పెన్షన్లు, తల్లికి వందనం, ఉచిత బస్సు, గృహాలు, ఉపాధి హామీ, వృద్ధులు, మహిళలు
 🍚 రైస్ కార్డు, దీపం ఉచిత గ్యాస్, ఉజ్వల
 🎓 స్కాలర్‌షిప్‌లు, EAPCET / ICET / POLYCET / NEET ప్రవేశాలు, RTE ఉచిత సీట్లు, వసతి గృహాలు, PM ఇంటర్న్‌షిప్, ప్రభుత్వ ఉద్యోగాలు
-🚗 డ్రైవింగ్ లైసెన్స్, RC బదిలీ, చలాన్లు
-🛡️ అత్యవసర నంబర్లు, FIR, PGRS ఫిర్యాదులు, RTI, వినియోగదారుల ఫిర్యాదులు, ఉచిత న్యాయ సహాయం
-🏦 జన్ ధన్, ₹20 బీమా, అటల్ పెన్షన్, PF విత్‌డ్రా
+🚗 డ్రైవింగ్ లైసెన్స్, లారీ/బస్సు లైసెన్స్, RC బదిలీ, RC నుండి బ్యాంక్ రుణం తొలగింపు, ఆటో/లారీ పర్మిట్, ఫిట్‌నెస్, రోడ్డు పన్ను, చలాన్లు
+🛡️ అత్యవసర నంబర్లు, FIR, పోలీస్ వెరిఫికేషన్, PGRS ఫిర్యాదులు, RTI, వినియోగదారుల ఫిర్యాదులు, ఉచిత న్యాయ సహాయం
+🏦 జన్ ధన్, ₹20 బీమా, అటల్ పెన్షన్, PF విత్‌డ్రా, ఆదాయపు పన్ను రిటర్న్ & TDS రీఫండ్
 💼 ముద్ర, PMEGP, ఆహార ప్రాసెసింగ్ సబ్సిడీ, BC/SC/ST/మైనారిటీ కార్పొరేషన్ రుణాలు, డ్వాక్రా / SHG రుణాలు
 🛕 TTD & ఆలయ దర్శన బుకింగ్, సురక్షిత గల్ఫ్ ఉద్యోగాలు, NRI బీమా & ఆస్తి
 🪪 ఆధార్ (పోయిన కార్డు, పథకాల డబ్బుకు బ్యాంక్ లింక్, పిల్లల అప్‌డేట్, దుర్వినియోగ లాక్), PAN, పాస్‌పోర్ట్, ఓటర్ ID, డిజిలాకర్
@@ -133,7 +135,15 @@ A+ పెద్ద అక్షరాలు
 
 ---
 
-## Release notes (first version)
+## Release notes
+
+v1.1.0
+
+EN: Every guide is now a full A-to-Z walkthrough — stage by stage, with a cost example, common problems and fixes, and what to do afterwards. New: permit, fitness and road tax for autos and lorries; remove bank loan from RC; police verification certificate; electricity bill and meter complaints; income tax return and TDS refund.
+
+TE: ప్రతి గైడ్ ఇప్పుడు A నుండి Z వరకు పూర్తి మార్గదర్శి — దశలవారీగా, ఖర్చు ఉదాహరణ, సాధారణ సమస్యలు-పరిష్కారాలు, తర్వాత ఏం చేయాలి. కొత్తవి: ఆటో, లారీలకు పర్మిట్, ఫిట్‌నెస్, రోడ్డు పన్ను; RC నుండి బ్యాంక్ రుణం తొలగింపు; పోలీస్ వెరిఫికేషన్ సర్టిఫికెట్; కరెంట్ బిల్లు, మీటర్ ఫిర్యాదులు; ఆదాయపు పన్ను రిటర్న్, TDS రీఫండ్.
+
+v1.0.0
 
 EN: First release — 120+ step-by-step guides to AP & central government services in Telugu and English, offline Saayam helper, read aloud, WhatsApp sharing, saved guides and document checklists.
 
