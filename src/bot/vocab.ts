@@ -62,6 +62,7 @@ export const concepts: Concept[] = [
   { words: ['solar', 'rooftop', 'surya ghar', 'సోలార్', 'సౌర'], guides: ['pm-surya-ghar'] },
   { words: ['current', 'electricity', 'power', 'meter', 'karent', 'విద్యుత్', 'కరెంట్', 'మీటర్'], guides: ['new-electricity-connection', 'pm-surya-ghar', 'agri-power-connection'] },
   { words: ['borewell', 'bore', 'motor', 'agricultural power', 'agricultural connection', 'వ్యవసాయ విద్యుత్', 'వ్యవసాయ కనెక్షన్', 'agriculture power', 'farm power', 'బోరు', 'మోటార్'], guides: ['agri-power-connection'] },
+  { words: ['water tax', 'water bill', 'water charges', 'neeti pannu', 'neeti bill', 'నీటి పన్ను', 'నీటి బిల్లు', 'నీటి ఛార్జీ'], guides: ['water-connection', 'property-tax'] },
   { words: ['water', 'tap', 'drainage', 'neeru', 'nallaa', 'నీరు', 'కుళాయి', 'డ్రైనేజీ'], guides: ['water-connection', 'civic-complaints'] },
   { words: ['garbage', 'streetlight', 'road', 'drain', 'mosquito', 'chetta', 'చెత్త', 'వీధి దీపం', 'రోడ్డు', 'దోమ'], guides: ['civic-complaints'] },
   // Farmers & animals
@@ -113,6 +114,7 @@ export const concepts: Concept[] = [
   { words: ['pan', 'pan card', 'పాన్'], guides: ['pan-card'] },
   { words: ['passport', 'పాస్‌పోర్ట్'], guides: ['passport'] },
   { words: ['voter', 'vote', 'epic', 'ఓటర్', 'ఓటు'], guides: ['voter-id'] },
+  { words: ['lorry', 'truck', 'tipper', 'tanker', 'heavy vehicle', 'heavy licence', 'heavy license', 'hgmv', 'hpmv', 'hmv', 'bus licence', 'bus license', 'transport licence', 'badge', 'లారీ', 'ట్రక్', 'భారీ వాహన'], guides: ['heavy-vehicle-licence', 'driving-licence'] },
   { words: ['licence', 'license', 'driving', 'll', 'learner', 'లైసెన్స్', 'డ్రైవింగ్'], guides: ['driving-licence'] },
   { words: ['digilocker', 'డిజిలాకర్'], guides: ['digilocker'] },
   { words: ['whatsapp', 'mana mitra', 'మన మిత్ర', 'వాట్సాప్'], guides: ['mana-mitra'] },

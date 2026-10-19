@@ -494,6 +494,10 @@ const entries: DirEntry[] = [
     title: { en: "SHG loans & Streenidhi", te: "SHG రుణాలు & స్త్రీనిధి" },
     what: { en: "Up to ₹3 lakh per member (Streenidhi)", te: "సభ్యురాలికి ₹3 లక్షల వరకు (స్త్రీనిధి)" },
     where: { en: "VO / MEPMA staff", te: "VO / MEPMA సిబ్బంది" } },
+  { id: 'd-heavy-licence', guideId: 'heavy-vehicle-licence', group: 'transport', level: 'both',
+    title: { en: 'Lorry / bus licence (heavy vehicle)', te: 'లారీ / బస్సు లైసెన్స్ (భారీ వాహనం)' },
+    what: { en: 'Age 20+, driving-school training, LL then heavy-vehicle test', te: '20+ వయస్సు, డ్రైవింగ్ స్కూల్ శిక్షణ, LL తర్వాత భారీ వాహన టెస్ట్' },
+    where: { en: 'parivahan.gov.in → RTO', te: 'parivahan.gov.in → RTO' } },
 ];
 
 export const directory: DirEntry[] = entries;

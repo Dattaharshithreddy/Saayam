@@ -125,13 +125,56 @@ export default function GuideScreen() {
         ))}
       </Section>
 
-      <Section title={t(ui.steps)}>
-        {g.steps.map((x, i) => (
-          <Step key={i} n={i + 1}>
-            {t(x)}
-          </Step>
-        ))}
-      </Section>
+      {g.stages?.length ? (
+        <Section title={t(ui.fullWalkthrough)}>
+          {g.stages.map((st, si) => (
+            <View key={si} style={s.stage}>
+              <Text style={[s.stageTitle, { fontSize: type.h3 * sc, lineHeight: 26 * sc }]}>
+                {t(ui.stageWord)} {si + 1} · {t(st.title)}
+              </Text>
+              {st.steps.map((x, i) => (
+                <Step key={i} n={i + 1}>
+                  {t(x)}
+                </Step>
+              ))}
+              {st.note && <Text style={[s.stageNote, { fontSize: type.small * sc, lineHeight: 21 * sc }]}>💡 {t(st.note)}</Text>}
+            </View>
+          ))}
+        </Section>
+      ) : (
+        <Section title={t(ui.steps)}>
+          {g.steps.map((x, i) => (
+            <Step key={i} n={i + 1}>
+              {t(x)}
+            </Step>
+          ))}
+        </Section>
+      )}
+
+      {g.costExample && (
+        <Section title={t(ui.costExample)}>
+          <Text style={[s.body, { fontSize: type.body * sc, lineHeight: 24 * sc }]}>{t(g.costExample)}</Text>
+        </Section>
+      )}
+
+      {!!g.problems?.length && (
+        <Section title={t(ui.problems)}>
+          {g.problems.map((p, i) => (
+            <View key={i} style={[s.problem, i > 0 && s.feeDivider]}>
+              <Text style={[s.problemQ, { fontSize: type.body * sc, lineHeight: 24 * sc }]}>❓ {t(p.problem)}</Text>
+              <Text style={[s.body, { fontSize: type.body * sc, lineHeight: 24 * sc }]}>✅ {t(p.fix)}</Text>
+            </View>
+          ))}
+        </Section>
+      )}
+
+      {!!g.afterwards?.length && (
+        <Section title={t(ui.afterwards)}>
+          {g.afterwards.map((x, i) => (
+            <Bullet key={i}>{t(x)}</Bullet>
+          ))}
+        </Section>
+      )}
 
       <Section title={t(ui.whereToApply)}>
         {g.whereToApply.map((x, i) => (
@@ -248,6 +291,11 @@ function ReportModal({ open, onClose, guideId }: { open: boolean; onClose: () =>
 }
 
 const s = StyleSheet.create({
+  stage: { marginBottom: space.md, paddingBottom: space.sm, borderBottomWidth: 1, borderBottomColor: colors.line },
+  stageTitle: { fontWeight: '800', color: colors.primary, marginBottom: space.sm },
+  stageNote: { color: colors.muted, backgroundColor: colors.primarySoft, borderRadius: radius.sm, padding: space.sm, marginTop: 4 },
+  problem: { paddingVertical: space.sm, gap: 4 },
+  problemQ: { fontWeight: '700', color: colors.ink },
   page: { padding: space.lg, paddingBottom: 56 },
   title: { fontSize: type.h1, fontWeight: '900', color: colors.ink, lineHeight: 34 },
   summary: { fontSize: type.body, color: colors.ink, lineHeight: 25, marginBottom: space.lg },

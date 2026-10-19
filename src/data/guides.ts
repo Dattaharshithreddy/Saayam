@@ -7,6 +7,7 @@ import { guides7 } from './guides-7';
 import { guides8 } from './guides-8';
 import { guides9 } from './guides-9';
 import { moreGuides } from './guides-more';
+import { deep, deepGuides } from './deep';
 
 /**
  * Hand-written guides. Every fact here was checked against public sources on
@@ -524,7 +525,10 @@ const baseGuides: Guide[] = [
   },
 ];
 
-export const guides: Guide[] = [...baseGuides, ...moreGuides, ...guides3, ...guides4, ...guides5, ...guides6, ...guides7, ...guides8, ...guides9];
+const allGuides: Guide[] = [...baseGuides, ...moreGuides, ...guides3, ...guides4, ...guides5, ...guides6, ...guides7, ...guides8, ...guides9, ...deepGuides];
+
+/** Every guide, with its full A-to-Z walkthrough merged in where one has been written (see deep.ts). */
+export const guides: Guide[] = allGuides.map((g) => (deep[g.id] ? { ...g, ...deep[g.id] } : g));
 
 export function getGuide(id: string): Guide | undefined {
   return guides.find((g) => g.id === id);

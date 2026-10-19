@@ -29,6 +29,12 @@ export type Category = {
 
 export type Fee = { item: L; amount: L };
 
+/** One stage of a full walkthrough, e.g. "Learner's licence test", with detailed sub-steps. */
+export type Stage = { title: L; steps: L[]; note?: L };
+
+/** A common problem and exactly what to do about it. */
+export type Problem = { problem: L; fix: L };
+
 export type Guide = {
   id: string;
   category: CategoryId;
@@ -41,7 +47,16 @@ export type Guide = {
   whoCanApply: L[];
   documents: L[];
   fees: Fee[];
+  /** Short version of the process (always present; used when there is no walkthrough). */
   steps: L[];
+  /** Full A-to-Z walkthrough, stage by stage. When present, the app shows this instead of `steps`. */
+  stages?: Stage[];
+  /** Worked example of the total cost. */
+  costExample?: L;
+  /** "If it goes wrong" — rejections, mistakes and how to fix them. */
+  problems?: Problem[];
+  /** What to do after you get it (renewals, linked updates). */
+  afterwards?: L[];
   whereToApply: L[];
   timeline: L;
   tips: L[];

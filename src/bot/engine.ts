@@ -49,7 +49,7 @@ export function normalize(s: string): string {
 }
 
 const TELUGU = /[ఀ-౿]/;
-const WHOLE_WORD = new Set(['auto', 'case', 'bore', 'bed', 'law', 'vote', 'body', 'site', 'time', 'days', 'when', 'call', 'link', 'tips', 'shop', 'job', 'pan', 'gas', 'tap', 'pig', 'cow', 'vet', 'ttd', 'ews', 'obc', 'ncl', 'rte', 'ssc', 'iti', 'mba', 'mca', 'llb', 'kcc', 'pf', 'epf', 'uan', 'rc', 'ec', 'ccrc', 'msp', 'dbt', 'nri', 'nris', 'gst', 'bds', 'll', 'uid', 'rti', 'fir', 'mbbs']);
+const WHOLE_WORD = new Set(['neet', 'auto', 'case', 'bore', 'bed', 'law', 'vote', 'body', 'site', 'time', 'days', 'when', 'call', 'link', 'tips', 'shop', 'job', 'pan', 'gas', 'tap', 'pig', 'cow', 'vet', 'ttd', 'ews', 'obc', 'ncl', 'rte', 'ssc', 'iti', 'mba', 'mca', 'llb', 'kcc', 'pf', 'epf', 'uan', 'rc', 'ec', 'ccrc', 'msp', 'dbt', 'nri', 'nris', 'gst', 'bds', 'll', 'uid', 'rti', 'fir', 'mbbs']);
 const normCache = new Map<string, string>();
 function norm(word: string): string {
   let n = normCache.get(word);
@@ -185,7 +185,11 @@ export function sectionText(g: Guide, s: Section, lang: Lang): string {
     case 'who': body = bullets(g.whoCanApply); break;
     case 'docs': body = bullets(g.documents); break;
     case 'fees': body = g.fees.map((f) => `• ${T(f.item, lang)}: ${T(f.amount, lang)}`).join('\n'); break;
-    case 'steps': body = g.steps.map((x, i) => `${i + 1}. ${T(x, lang)}`).join('\n'); break;
+    case 'steps':
+      body = g.stages?.length
+        ? g.stages.map((st, si) => `▶ ${si + 1}. ${T(st.title, lang)}\n` + st.steps.map((x, i) => `   ${si + 1}.${i + 1} ${T(x, lang)}`).join('\n')).join('\n\n')
+        : g.steps.map((x, i) => `${i + 1}. ${T(x, lang)}`).join('\n');
+      break;
     case 'where': body = bullets(g.whereToApply); break;
     case 'time': body = T(g.timeline, lang); break;
     case 'tips': body = bullets(g.tips); break;
