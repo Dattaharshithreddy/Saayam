@@ -6,6 +6,7 @@ import { deepB } from './deep-b';
 import { deepC } from './deep-c';
 import { deepD } from './deep-d';
 import { deepE } from './deep-e';
+import { deepF } from './deep-f';
 
 /** Every full A-to-Z walkthrough, keyed by guide id. Add new batch files here. */
-export const walkthroughs: Record<string, Partial<Guide>> = { ...deep, ...deepA1, ...deepA2, ...deepB, ...deepC, ...deepD, ...deepE };
+export const walkthroughs: Record<string, Partial<Guide>> = { ...deep, ...deepA1, ...deepA2, ...deepB, ...deepC, ...deepD, ...deepE, ...deepF };
