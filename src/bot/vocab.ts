@@ -60,7 +60,7 @@ export const concepts: Concept[] = [
   { words: ['abha', 'health id', 'health record'], guides: ['abha-health-id'] },
   // Power & solar
   { words: ['solar', 'rooftop', 'surya ghar', 'సోలార్', 'సౌర'], guides: ['pm-surya-ghar'] },
-  { words: ['current', 'electricity', 'power', 'meter', 'karent', 'విద్యుత్', 'కరెంట్', 'మీటర్'], guides: ['new-electricity-connection', 'pm-surya-ghar', 'agri-power-connection'] },
+  { words: ['current', 'electricity', 'power', 'meter', 'karent', 'విద్యుత్', 'కరెంట్', 'మీటర్'], guides: ['new-electricity-connection', 'electricity-bill-complaints', 'pm-surya-ghar', 'agri-power-connection'] },
   { words: ['borewell', 'bore', 'motor', 'agricultural power', 'agricultural connection', 'వ్యవసాయ విద్యుత్', 'వ్యవసాయ కనెక్షన్', 'agriculture power', 'farm power', 'బోరు', 'మోటార్'], guides: ['agri-power-connection'] },
   { words: ['water tax', 'water bill', 'water charges', 'neeti pannu', 'neeti bill', 'నీటి పన్ను', 'నీటి బిల్లు', 'నీటి ఛార్జీ'], guides: ['water-connection', 'property-tax'] },
   { words: ['water', 'tap', 'drainage', 'neeru', 'nallaa', 'నీరు', 'కుళాయి', 'డ్రైనేజీ'], guides: ['water-connection', 'civic-complaints'] },
@@ -116,10 +116,15 @@ export const concepts: Concept[] = [
   { words: ['voter', 'vote', 'epic', 'ఓటర్', 'ఓటు'], guides: ['voter-id'] },
   { words: ['lorry', 'truck', 'tipper', 'tanker', 'heavy vehicle', 'heavy licence', 'heavy license', 'hgmv', 'hpmv', 'hmv', 'bus licence', 'bus license', 'transport licence', 'badge', 'లారీ', 'ట్రక్', 'భారీ వాహన'], guides: ['heavy-vehicle-licence', 'driving-licence'] },
   { words: ['licence', 'license', 'driving', 'll', 'learner', 'లైసెన్స్', 'డ్రైవింగ్'], guides: ['driving-licence'] },
+  { words: ['permit', 'national permit', 'fitness', 'fitness certificate', 'road tax', 'vehicle tax', 'quarterly tax', 'commercial vehicle', 'transport vehicle', 'పర్మిట్', 'ఫిట్‌నెస్', 'రోడ్డు పన్ను', 'వాహన పన్ను'], guides: ['commercial-vehicle-papers'] },
+  { words: ['hypothecation', 'loan removal', 'bank noc', 'form 35', 'duplicate rc', 'rc lost', 'rc address', 'bank name', 'remove bank', 'loan closed', 'loan close', 'rc services', 'rc service', 'హైపోథెకేషన్', 'డూప్లికేట్ rc'], guides: ['rc-services'] },
+  { words: ['police verification', 'pcc', 'police clearance', 'character certificate', 'conduct certificate', 'పోలీస్ వెరిఫికేషన్'], guides: ['police-verification-certificate'] },
+  { words: ['current bill', 'electricity bill', 'electricity problem', 'electricity problems', 'electricity complaint', 'power complaint', 'power bill', 'high bill', 'meter', 'power cut', 'no current', 'no power', 'transformer', 'voltage', '1912', 'కరెంట్ బిల్లు', 'విద్యుత్ బిల్లు', 'మీటర్', 'కరెంట్ లేదు', 'ట్రాన్స్‌ఫార్మర్'], guides: ['electricity-bill-complaints'] },
+  { words: ['income tax', 'itr', 'tax return', 'tds', 'refund', 'form 16', 'ఆదాయపు పన్ను', 'ఇన్‌కమ్ ట్యాక్స్', 'రీఫండ్'], guides: ['income-tax-return'] },
   { words: ['digilocker', 'డిజిలాకర్'], guides: ['digilocker'] },
   { words: ['whatsapp', 'mana mitra', 'మన మిత్ర', 'వాట్సాప్'], guides: ['mana-mitra'] },
   // Transport
-  { words: ['rc', 'vehicle transfer', 'bike transfer', 'car transfer', 'ownership transfer', 'బండి', 'వాహన'], guides: ['vehicle-transfer'] },
+  { words: ['rc', 'vehicle transfer', 'bike transfer', 'car transfer', 'ownership transfer', 'బండి', 'వాహన'], guides: ['vehicle-transfer', 'rc-services'] },
   { words: ['challan', 'traffic fine', 'traffic', 'చలాన్', 'జరిమానా'], guides: ['traffic-challan'] },
   { words: ['bus ticket', 'apsrtc', 'bus pass', 'బస్ టికెట్', 'బస్ పాస్'], guides: ['apsrtc-booking'] },
   // Safety & complaints
