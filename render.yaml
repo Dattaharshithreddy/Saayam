@@ -1,0 +1,18 @@
+# Render Blueprint: New > Blueprint > pick this repo. Set ANTHROPIC_API_KEY when asked.
+services:
+  - type: web
+    name: saayam-server
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci --omit=dev
+    startCommand: node index.mjs
+    healthCheckPath: /health
+    plan: free
+    region: singapore
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: SAAYAM_MODEL
+        value: claude-sonnet-5-5
+      - key: NODE_VERSION
+        value: "22"

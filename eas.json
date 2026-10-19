@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {}
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_PRIVACY_URL": "https://dattaharshithreddy.github.io/saayam/privacy-policy.html",
+        "EXPO_PUBLIC_CONTACT_EMAIL": "dattaharshithreddy@gmail.com"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_PRIVACY_URL": "https://dattaharshithreddy.github.io/saayam/privacy-policy.html",
+        "EXPO_PUBLIC_CONTACT_EMAIL": "dattaharshithreddy@gmail.com"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "track": "internal"
+      }
+    }
+  }
+}
