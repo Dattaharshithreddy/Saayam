@@ -23,9 +23,9 @@ export const concepts: Concept[] = [
   { words: ['lrs', 'bps', 'unapproved', 'regularise', 'regularize', 'క్రమబద్ధీకరణ'], guides: ['lrs-bps-regularisation'] },
   { words: ['conversion', 'nala', 'farm land to plot', 'మార్పిడి'], guides: ['land-conversion'] },
   // Death, family, marriage, birth
-  { words: ['death', 'died', 'dead', 'expired', 'passed away', 'chanipoyaru', 'chanipoyindi', 'chanipoyadu', 'maranam', 'మరణ', 'చనిపోయ', 'మృతి'], guides: ['birth-death-certificate', 'family-member-certificate', 'land-mutation'] },
+  { words: ['death', 'died', 'dead', 'expired', 'passed away', 'chanipoyaru', 'chanipoyindi', 'chanipoyadu', 'maranam', 'మరణ', 'చనిపోయ', 'మృతి'], guides: ['birth-death-certificate', 'death-claims-money', 'family-member-certificate', 'land-mutation'] },
   { words: ['legal heir', 'family member certificate', 'varasudu', 'varasatvam', 'vaarasula', 'వారసు', 'కుటుంబ సభ్యుల'], guides: ['family-member-certificate'] },
-  { words: ['birth', 'born', 'baby', 'puttina', 'janana', 'జనన', 'పుట్టిన', 'శిశువు', 'బిడ్డ'], guides: ['birth-death-certificate', 'ntr-baby-kit', 'aadhaar-child-biometric'] },
+  { words: ['birth', 'born', 'baby', 'puttina', 'janana', 'జనన', 'పుట్టిన', 'శిశువు', 'బిడ్డ'], guides: ['newborn-checklist', 'birth-death-certificate', 'ntr-baby-kit', 'aadhaar-child-biometric'] },
   { words: ['marriage', 'married', 'wedding', 'pelli', 'vivaham', 'పెళ్లి', 'వివాహ'], guides: ['marriage-registration'] },
   { words: ['pregnant', 'pregnancy', 'garbham', 'maternity', 'anganwadi', 'గర్భ', 'ప్రసూతి', 'అంగన్‌వాడీ'], guides: ['maternity-anganwadi', 'ntr-baby-kit'] },
   { words: ['name change', 'gazette', 'peru marchali', 'పేరు మార్పు', 'గెజిట్'], guides: ['name-change-gazette'] },
@@ -45,13 +45,13 @@ export const concepts: Concept[] = [
   { words: ['fisherman', 'fishermen', 'fishing', 'matsyakara', 'boat', 'మత్స్యకార', 'చేపల'], guides: ['fishermen-support'] },
   { words: ['weaver', 'handloom', 'nethanna', 'chenetha', 'చేనేత', 'నేతన్న'], guides: ['nethanna-sevalo'] },
   { words: ['construction worker', 'mason', 'labour card', 'building worker', 'భవన నిర్మాణ కార్మిక'], guides: ['construction-workers-board', 'e-shram'] },
-  { words: ['labour', 'labor', 'daily wage', 'coolie', 'kuli', 'e shram', 'eshram', 'unorganised', 'కూలీ', 'కార్మిక'], guides: ['e-shram', 'rural-employment-guarantee', 'construction-workers-board'] },
+  { words: ['labour', 'labor', 'daily wage', 'coolie', 'kuli', 'e shram', 'eshram', 'unorganised', 'కూలీ', 'కార్మిక'], guides: ['labour-rights', 'e-shram', 'rural-employment-guarantee', 'construction-workers-board'] },
   { words: ['job card', 'upadhi', 'nrega', 'mgnrega', 'employment guarantee', '100 days', '125 days', 'ఉపాధి హామీ', 'జాబ్ కార్డు'], guides: ['rural-employment-guarantee'] },
   { words: ['scheme money', 'money not credited', 'dabbulu raledu', 'dabbulu padaledu', 'not received', 'payment failed', 'dbt', 'npci', 'seeding', 'డబ్బులు రాలేదు', 'డబ్బు పడలేదు', 'జమ కాలేదు'], guides: ['aadhaar-bank-dbt'] },
   { words: ['new scheme', 'aadabidda', 'nirudyoga', 'unemployment allowance', 'announced', 'ఆడబిడ్డ', 'నిరుద్యోగ'], guides: ['announced-schemes'] },
   // Food & gas
   { words: ['ration', 'rice card', 'biyyam', 'ration card', 'రేషన్', 'బియ్యం', 'రైస్ కార్డు'], guides: ['rice-card'] },
-  { words: ['gas', 'cylinder', 'lpg', 'deepam', 'ujjwala', 'గ్యాస్', 'సిలిండర్', 'దీపం'], guides: ['deepam-free-gas', 'ujjwala'] },
+  { words: ['gas', 'cylinder', 'lpg', 'deepam', 'ujjwala', 'గ్యాస్', 'సిలిండర్', 'దీపం'], guides: ['deepam-free-gas', 'ujjwala', 'lpg-connection'] },
   // Health
   { words: ['hospital', 'treatment', 'operation', 'surgery', 'aasupatri', 'vaidyam', 'arogyasri', 'aarogyasri', 'vaidya seva', 'health card', 'ఆసుపత్రి', 'వైద్య', 'ఆరోగ్యశ్రీ', 'ఆపరేషన్'], guides: ['ntr-vaidya-seva', 'ayushman-vay-vandana', 'cm-relief-fund'] },
   { words: ['ayushman', 'pmjay', 'golden card', '70 years', 'vay vandana'], guides: ['ayushman-vay-vandana', 'ntr-vaidya-seva'] },
@@ -104,6 +104,11 @@ export const concepts: Concept[] = [
   { words: ['bank account', 'zero balance', 'jan dhan', 'బ్యాంక్ ఖాతా', 'జన్ ధన్'], guides: ['jan-dhan-account'] },
   { words: ['insurance', 'bima', 'beema', 'భీమా', 'బీమా'], guides: ['pmjjby-pmsby', 'livestock-insurance', 'crop-insurance', 'apnrts-insurance'] },
   { words: ['girl child', 'daughter', 'sukanya', 'ammayi', 'కూతురు', 'ఆడపిల్ల', 'సుకన్య'], guides: ['sukanya-samriddhi'] },
+  { words: ['train', 'railway', 'rail', 'irctc', 'tatkal', 'pnr', 'railu', 'రైలు', 'రైల్వే', 'తత్కాల్'], guides: ['railway-tickets'] },
+  { words: ['flood', 'cyclone', 'heavy rain', 'varada', 'varadha', 'tufanu', 'toofan', 'panta nastam', 'panta poyindi', 'fire accident', 'వరద', 'తుఫాను', 'పంట నష్టం', 'అగ్నిప్రమాదం'], guides: ['disaster-relief', 'crop-insurance'] },
+  { words: ['mobile lost', 'phone lost', 'phone poyindi', 'mobile poyindi', 'phone stolen', 'sim', 'ఫోన్ పోయింది', 'మొబైల్ పోయింది'], guides: ['sanchar-saathi', 'police-complaint'] },
+  { words: ['money lost', 'dabbu poyindi', 'upi fraud', 'online fraud', 'cyber', 'scam', 'డబ్బు పోయింది', 'సైబర్'], guides: ['cyber-fraud', 'emergency-helplines'] },
+  { words: ['salary not paid', 'wages not paid', 'salary pending', 'no salary', 'jeetham raledu', 'జీతం ఇవ్వలేదు', 'జీతం రాలేదు', 'కార్మిక హక్కు'], guides: ['labour-rights'] },
   { words: ['pf', 'epf', 'provident fund', 'uan', 'పీఎఫ్'], guides: ['epf-withdrawal'] },
   { words: ['life certificate', 'jeevan pramaan', 'pensioner'], guides: ['pensioner-life-certificate'] },
   // IDs
@@ -128,7 +133,7 @@ export const concepts: Concept[] = [
   { words: ['challan', 'traffic fine', 'traffic', 'చలాన్', 'జరిమానా'], guides: ['traffic-challan'] },
   { words: ['bus ticket', 'apsrtc', 'bus pass', 'బస్ టికెట్', 'బస్ పాస్'], guides: ['apsrtc-booking'] },
   // Safety & complaints
-  { words: ['police', 'fir', 'case', 'theft', 'stolen', 'dongathanam', 'పోలీస్', 'దొంగ', 'కేసు'], guides: ['police-complaint', 'emergency-helplines'] },
+  { words: ['police', 'fir', 'case', 'theft', 'stolen', 'dongathanam', 'పోలీస్', 'దొంగ', 'కేసు'], guides: ['police-complaint', 'court-case-journey', 'bns-sections', 'emergency-helplines'] },
   { words: ['lost phone', 'lost document', 'missing', 'పోయింది', 'పోగొట్టుకున్న'], guides: ['police-complaint', 'certified-copy', 'aadhaar-lost-download'] },
   { words: ['emergency', 'danger', 'atyavasaram', 'అత్యవసర'], guides: ['emergency-helplines', 'health-numbers'] },
   { words: ['complaint', 'firyadu', 'phiryadu', 'grievance', 'spandana', 'meekosam', 'bribe', 'lanchham', 'lancham', 'delay', 'ఫిర్యాదు', 'లంచం', 'మీకోసం'], guides: ['pgrs-grievance', 'civic-complaints', 'consumer-complaint'] },
@@ -156,14 +161,14 @@ export const lifeEvents: LifeEvent[] = [
       en: 'I\'m sorry for your loss. After a death in the family, this is usually needed, in this order:',
       te: 'మీ కుటుంబంలో జరిగిన నష్టానికి చింతిస్తున్నాను. కుటుంబంలో మరణం తర్వాత సాధారణంగా ఈ క్రమంలో ఇవి అవసరం:',
     },
-    guides: ['birth-death-certificate', 'family-member-certificate', 'land-mutation', 'ntr-bharosa-pension', 'pmjjby-pmsby', 'epf-withdrawal'],
+    guides: ['birth-death-certificate', 'family-member-certificate', 'death-claims-money', 'land-mutation', 'ntr-bharosa-pension', 'pmjjby-pmsby', 'epf-withdrawal'],
     unless: ['abroad', 'gulf', 'dubai', 'saudi', 'kuwait', 'videsham', 'embassy', 'విదేశ', 'గల్ఫ్'],
   },
   {
     id: 'baby',
     words: ['new baby', 'baby born', 'delivery', 'pregnant', 'garbham', 'bidda puttindi', 'బిడ్డ పుట్ట', 'గర్భ', 'ప్రసవ'],
     intro: { en: 'Congratulations! For pregnancy and a new baby:', te: 'అభినందనలు! గర్భం, కొత్త బిడ్డ కోసం:' },
-    guides: ['maternity-anganwadi', 'birth-death-certificate', 'ntr-baby-kit', 'aadhaar-child-biometric', 'sukanya-samriddhi'],
+    guides: ['newborn-checklist', 'maternity-anganwadi', 'birth-death-certificate', 'ntr-baby-kit', 'aadhaar-child-biometric', 'sukanya-samriddhi'],
   },
   {
     id: 'marriage',
@@ -227,6 +232,7 @@ export const lifeEvents: LifeEvent[] = [
     words: ['lost my', 'documents lost', 'lost documents', 'lost certificate', 'lost deed', 'poyindi', 'pogottukunna', 'పోయింది', 'పోగొట్టుకున్న'],
     intro: { en: 'For lost documents:', te: 'పోయిన పత్రాల కోసం:' },
     guides: ['police-complaint', 'aadhaar-lost-download', 'certified-copy', 'duplicate-ssc-inter', 'digilocker'],
+    unless: ['flood', 'cyclone', 'varada', 'tufanu', 'panta', 'crop', 'money', 'dabbu', 'phone', 'mobile', 'వరద', 'తుఫాను', 'పంట', 'డబ్బు', 'ఫోన్', 'మొబైల్'],
   },
 ];
 
@@ -237,7 +243,7 @@ export const sectionWords: Record<Section, string[]> = {
   fees: ['fee', 'fees', 'cost', 'charge', 'price', 'how much', 'entha', 'enta', 'amount', 'rupees', 'kharchu', 'ఫీజు', 'ఎంత', 'ఖర్చు', 'ధర', 'రుసుము', 'మొత్తం'],
   docs: ['document', 'documents', 'papers', 'proof', 'what to carry', 'patralu', 'documents enti', 'కావాల్సిన పత్ర', 'పత్రాలు', 'డాక్యుమెంట్'],
   who: ['eligible', 'eligibility', 'who can', 'can i', 'am i', 'arhata', 'arhulu', 'అర్హత', 'అర్హులు', 'ఎవరు'],
-  where: ['where', 'which office', 'ekkada', 'ekkadiki', 'office', 'website', 'online', 'ఎక్కడ', 'ఆఫీసు', 'కార్యాలయం'],
+  where: ['where', 'which office', 'ekkada', 'ekkadiki', 'office', 'website', 'ఎక్కడ', 'ఆఫీసు', 'కార్యాలయం'],
   time: ['how long', 'how many days', 'time', 'days', 'enni rojulu', 'eppudu', 'when', 'ఎన్ని రోజులు', 'సమయం', 'ఎప్పుడు', 'ఎన్నాళ్లు'],
   steps: ['how to', 'process', 'procedure', 'steps', 'apply', 'ela', 'elaa', 'ఎలా', 'ప్రక్రియ', 'దరఖాస్తు', 'విధానం'],
   tips: ['tips', 'careful', 'mistake', 'jagratta', 'జాగ్రత్త', 'సలహా'],

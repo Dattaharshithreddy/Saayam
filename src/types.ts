@@ -15,6 +15,7 @@ export type CategoryId =
   | 'education'
   | 'transport'
   | 'safety'
+  | 'law'
   | 'money'
   | 'digital'
   | 'business'

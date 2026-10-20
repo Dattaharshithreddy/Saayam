@@ -1,5 +1,6 @@
 import { L } from '../types';
 import { guides } from './guides';
+import { extraDir } from './extra-all';
 
 /**
  * A–Z directory of AP and central services. Each entry is one line: what it is
@@ -520,7 +521,12 @@ const entries: DirEntry[] = [
     where: { en: 'incometax.gov.in', te: 'incometax.gov.in' } },
 ];
 
-export const directory: DirEntry[] = entries;
+const extraEntries: DirEntry[] = extraDir.map((x) => {
+  const g = guides.find((gg) => gg.id === x.guideId);
+  return { id: 'd-' + x.guideId, guideId: x.guideId, group: x.group, level: g ? g.level : 'both', title: g ? g.title : x.what, what: x.what, where: x.where };
+});
+
+export const directory: DirEntry[] = [...entries, ...extraEntries];
 
 // Fail fast in development if an entry points at a guide that doesn't exist.
 if (__DEV__) {

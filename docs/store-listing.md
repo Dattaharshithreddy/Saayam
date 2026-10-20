@@ -34,7 +34,8 @@ Every guide tells you:
 • Tips to avoid middlemen and common mistakes
 • Official links and helpline numbers
 
-125+ guides, including:
+150+ guides, including:
+⚖️ Law & your rights — police sections (BNS / old IPC) in simple words, arrest & bail, FIR to court case, cheque bounce, divorce & maintenance, land disputes, claiming a deceased person's money
 🏠 Land & property — registration, name mistakes in deeds, mutation (1B/Adangal), EC, 22A prohibited land, subdivision, Will/GPA
 📜 Certificates — caste, income, EWS, OBC, birth & death, legal heir, marriage, name change, disability (SADAREM)
 🏥 Health — NTR Vaidya Seva, Ayushman Bharat, Vay Vandana (70+), CM Relief Fund, 108/104
@@ -97,7 +98,8 @@ AP & కేంద్ర ప్రభుత్వ సేవలకు తెలు
 • మధ్యవర్తులు, సాధారణ తప్పుల నుండి జాగ్రత్తలు
 • అధికారిక లింకులు, హెల్ప్‌లైన్ నంబర్లు
 
-125కి పైగా గైడ్‌లు:
+150కి పైగా గైడ్‌లు:
+⚖️ చట్టం & మీ హక్కులు — పోలీస్ సెక్షన్లు (BNS / పాత IPC) సులభంగా, అరెస్ట్ & బెయిల్, FIR నుండి కోర్టు కేసు వరకు, చెక్ బౌన్స్, విడాకులు & భరణం, భూ వివాదాలు, మరణించినవారి డబ్బు క్లెయిమ్
 🏠 భూమి & ఆస్తి — రిజిస్ట్రేషన్, డీడ్‌లో పేరు తప్పు, మ్యుటేషన్ (1B/అడంగల్), EC, 22A నిషేధిత భూమి, సబ్‌డివిజన్, వీలునామా/GPA
 📜 సర్టిఫికెట్లు — కుల, ఆదాయ, EWS, OBC, జనన & మరణ, వారసత్వ, వివాహ, పేరు మార్పు, వికలాంగ (SADAREM)
 🏥 ఆరోగ్యం — NTR వైద్య సేవ, ఆయుష్మాన్ భారత్, వయ వందన (70+), ముఖ్యమంత్రి సహాయ నిధి, 108/104
@@ -136,6 +138,12 @@ A+ పెద్ద అక్షరాలు
 ---
 
 ## Release notes
+
+v1.2.0
+
+EN: 29 new guides, each a full walkthrough: police sections (BNS) explained, arrest & bail, court cases, cheque bounce, divorce & maintenance, land disputes, claims after a death, new vehicle registration, licence renewal, road accidents & compensation, vehicle insurance, cyber fraud, Sanchar Saathi, bank complaints, unclaimed money, post office savings, education loans, worker rights, rent agreements, RERA, LPG, residence certificate, TC & open school, free health services, new baby checklist, police permissions, transgender ID, train tickets and disaster relief.
+
+TE: 29 కొత్త గైడ్‌లు, ప్రతిదీ పూర్తి మార్గదర్శి: పోలీస్ సెక్షన్లు (BNS), అరెస్ట్ & బెయిల్, కోర్టు కేసులు, చెక్ బౌన్స్, విడాకులు & భరణం, భూ వివాదాలు, మరణం తర్వాత క్లెయిమ్‌లు, కొత్త వాహన నమోదు, లైసెన్స్ రెన్యువల్, రోడ్డు ప్రమాదాలు & పరిహారం, వాహన బీమా, సైబర్ మోసం, సంచార్ సాథీ, బ్యాంక్ ఫిర్యాదులు, క్లెయిమ్ చేయని డబ్బు, పోస్టాఫీసు పొదుపు, విద్యా రుణాలు, కార్మిక హక్కులు, అద్దె ఒప్పందాలు, RERA, LPG, నివాస ధృవీకరణ, TC & ఓపెన్ స్కూల్, ఉచిత ఆరోగ్య సేవలు, కొత్త బిడ్డ చెక్‌లిస్ట్, పోలీసు అనుమతులు, ట్రాన్స్‌జెండర్ ఐడీ, రైలు టికెట్లు, విపత్తు సహాయం.
 
 v1.1.0
 

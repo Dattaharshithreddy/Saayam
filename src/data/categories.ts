@@ -68,6 +68,12 @@ export const categories: Category[] = [
     blurb: { en: 'Emergency, FIR, RTI, consumer, women\'s safety, free lawyer', te: 'అత్యవసరం, FIR, RTI, వినియోగదారు, మహిళా రక్షణ, ఉచిత న్యాయవాది' },
   },
   {
+    id: 'law',
+    icon: '⚖️',
+    title: { en: 'Law, Courts & Your Rights', te: 'చట్టం, కోర్టులు & మీ హక్కులు' },
+    blurb: { en: 'BNS sections, arrest & bail, cheque bounce, divorce, property disputes', te: 'BNS సెక్షన్లు, అరెస్ట్ & బెయిల్, చెక్ బౌన్స్, విడాకులు, ఆస్తి వివాదాలు' },
+  },
+  {
     id: 'money',
     icon: '🏦',
     title: { en: 'Banking, Savings & Insurance', te: 'బ్యాంకింగ్, పొదుపు & బీమా' },

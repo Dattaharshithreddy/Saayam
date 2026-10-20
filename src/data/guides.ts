@@ -9,6 +9,7 @@ import { guides9 } from './guides-9';
 import { moreGuides } from './guides-more';
 import { deepGuides } from './deep';
 import { newGuides } from './deep-new';
+import { extraGuides } from './extra-all';
 import { walkthroughs } from './deep-all';
 
 /**
@@ -527,7 +528,7 @@ const baseGuides: Guide[] = [
   },
 ];
 
-const allGuides: Guide[] = [...baseGuides, ...moreGuides, ...guides3, ...guides4, ...guides5, ...guides6, ...guides7, ...guides8, ...guides9, ...deepGuides, ...newGuides];
+const allGuides: Guide[] = [...baseGuides, ...moreGuides, ...guides3, ...guides4, ...guides5, ...guides6, ...guides7, ...guides8, ...guides9, ...deepGuides, ...newGuides, ...extraGuides];
 
 /** Every guide, with its full A-to-Z walkthrough merged in where one has been written (see deep.ts). */
 export const guides: Guide[] = allGuides.map((g) => (walkthroughs[g.id] ? { ...g, ...walkthroughs[g.id] } : g));

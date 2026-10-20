@@ -9,7 +9,7 @@ import { b, CHECKED, fee } from './bi';
 export const deep: Record<string, Partial<Guide>> = {
   // ───────────────────────────────────────────── DRIVING LICENCE (bike / car)
   'driving-licence': {
-    title: b('Driving licence — bike or car, from learner\'s licence to the card', 'డ్రైవింగ్ లైసెన్స్ — బైక్ లేదా కారు, లెర్నర్ లైసెన్స్ నుండి కార్డు వరకు'),
+    title: b('Car or bike driving licence — from learner\'s licence to the card', 'కారు లేదా బైక్ డ్రైవింగ్ లైసెన్స్ — లెర్నర్ లైసెన్స్ నుండి కార్డు వరకు'),
     summary: b(
       'Two parts: (1) a learner\'s licence (LL) after a short road-rules test, then (2) after at least 30 days of practice, a driving test at the RTO for the permanent licence, which is posted to you. You apply online, pay online and go to the RTO only for the tests. Doing it yourself costs about ₹1,000–1,600 for bike + car — agents charge several times more.',
       'రెండు భాగాలు: (1) చిన్న రోడ్డు నియమాల పరీక్ష తర్వాత లెర్నర్ లైసెన్స్ (LL), తర్వాత (2) కనీసం 30 రోజుల ప్రాక్టీస్ తర్వాత RTOలో డ్రైవింగ్ టెస్ట్ — పర్మనెంట్ లైసెన్స్ పోస్ట్‌లో వస్తుంది. దరఖాస్తు, చెల్లింపు ఆన్‌లైన్‌లోనే; టెస్టులకు మాత్రమే RTOకు వెళ్లాలి. మీరే చేస్తే బైక్ + కారుకు సుమారు ₹1,000–1,600 — ఏజెంట్లు చాలా రెట్లు ఎక్కువ తీసుకుంటారు.',

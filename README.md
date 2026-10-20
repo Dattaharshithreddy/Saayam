@@ -30,7 +30,7 @@ On every guide page:
 - **🚩 Report wrong information** — opens the user's email app addressed to
   `EXPO_PUBLIC_CONTACT_EMAIL` (if a server URL is set instead, it's posted to `/feedback`).
 
-**126 full step-by-step guides** across 15 topics — every one a complete walkthrough (stages from start to finish, a worked cost example, common problems and fixes, what to do afterwards) — plus an **A–Z directory of 136 services**
+**155 full step-by-step guides** across 16 topics — every one a complete walkthrough (stages from start to finish, a worked cost example, common problems and fixes, what to do afterwards) — plus an **A–Z directory of 165 services**
 where every entry opens its full guide (checked 19 Oct 2026). Each guide has: who can apply,
 documents checklist, fees, numbered steps, where to go, timeline, tips, official links and
 helplines — all in English and Telugu.
