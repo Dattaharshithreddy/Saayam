@@ -4,7 +4,7 @@ Paste these into Play Console → Grow → Store presence → Main store listing
 Add Telugu as a second language (Store listing → Manage translations → Telugu) and paste the Telugu text there.
 Character counts were checked against Play's limits (title 30, short description 80, full description 4000).
 
-**App category:** Books & Reference · **Tags:** Reference, Education
+**App category:** Books & Reference · **Tags:** Books & reference, Productivity, Tools
 **Contact email:** saayam.support@gmail.com · **Privacy policy URL:** https://dattaharshithreddy.github.io/Saayam/privacy-policy.html
 
 ---
@@ -12,7 +12,7 @@ Character counts were checked against Play's limits (title 30, short description
 ## English
 
 **App name (≤30):**
-Saayam: AP Govt Services Help
+Saayam: AP Schemes & Services
 
 **Short description (≤80):**
 Unofficial step-by-step help for AP & central govt services in Telugu & English
@@ -79,7 +79,7 @@ Privacy: no sign-up, no ads, no tracking, no data collected. Everything stays on
 ## తెలుగు (Telugu)
 
 **App name (≤30):**
-సాయం: AP ప్రభుత్వ సేవల సహాయం
+సాయం: AP పథకాలు & సేవలు
 
 **Short description (≤80):**
 AP & కేంద్ర ప్రభుత్వ సేవలకు తెలుగులో దశల వారీ సహాయం. అనధికారిక గైడ్
