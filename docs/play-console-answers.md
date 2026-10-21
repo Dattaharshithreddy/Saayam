@@ -1,6 +1,6 @@
 # Play Console forms — answers for Saayam
 
-Answers below match how the app and `server/` actually behave (checked 19 Oct 2026).
+Answers below match how the app and `server/` actually behave (checked 21 Oct 2026, v1.3.0).
 If you add analytics, ads, crash reporting or accounts later, these answers must change.
 
 ## App content → Data safety
@@ -11,7 +11,9 @@ email app. So the app itself collects and shares nothing.
 **Does your app collect or share any of the required user data types?** No
 
 Why this is accurate:
-- Saved guides, checklist ticks, language and text size are stored only on the device (AsyncStorage) — never sent.
+- Saved guides, checklist ticks, language, text size, "What can we get?" answers and reminders are stored only on the device — never sent.
+- Reminders use local notifications scheduled on the phone (no push service, no server).
+- Guide updates are a plain download of a public JSON file from GitHub Pages; no user data is sent with it.
 - The Saayam helper is offline; what users type to it never leaves the phone.
 - "Report wrong information" / "Request a guide" only open the user's email app (a `mailto:` link). The user sends the email themselves from their own email account; the app doesn't transmit anything.
 - Read aloud uses the phone's own text-to-speech. Links open in the browser.
@@ -45,12 +47,18 @@ Proof the policy asks for (already in place):
 | Financial features | None (explains schemes and loans; no lending, payments or trading) |
 | Data safety | As above |
 
+## App signing
+
+Use **Play App Signing** (default for new apps). The `.aab` from GitHub Actions is signed with your private **upload key**
+(`saayam-upload.keystore`, alias `saayam-upload`); Google re-signs the app with its own app-signing key.
+Keep the keystore file and password backed up — if lost, ask Google to reset the upload key (Play Console → Setup → App signing).
+
 ## Releasing with a new personal developer account
 
 New personal accounts must run a **closed test with at least 12 testers opted in for 14 days in a row** before "Apply for production" unlocks. Internal testing does not count.
 
 Plan:
-1. Play Console → Testing → Closed testing → create track → upload the `.aab` from `eas build --profile production`.
+1. Play Console → Testing → Closed testing → create track → upload the `.aab` from the GitHub release (`saayam-v…-playstore.aab`, built by the Actions workflow and signed with your upload key).
 2. Add 12+ testers by email list or Google Group (family and friends with Android phones work well — ask them to keep the app installed for the full 14 days).
 3. Share the opt-in link; check the tester count in the console.
 4. After 14 days: Dashboard → Apply for production → answer the questions about what testers found and what you fixed.

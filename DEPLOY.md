@@ -24,6 +24,14 @@ eas build -p android --profile production   # .aab for Google Play
 
 Test the preview APK on a real phone: Telugu text, read aloud, share to WhatsApp, the Saayam helper (try Telugu and Tenglish), and that "Report" opens your email app. Turn on airplane mode — everything except links should still work.
 
+## 2b. Signed builds without Expo (GitHub Actions)
+
+The workflow in `.github/workflows/android-apk.yml` signs with your private upload key when these
+repository secrets exist (Settings → Secrets and variables → Actions):
+`ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`.
+Each GitHub Release then has a signed `.apk` and a `…-playstore.aab` to upload to Google Play.
+Raise `expo.android.versionCode` in `app.json` for every Play upload.
+
 ## 3. Google Play
 
 1. https://play.google.com/console — one-time US$25 developer registration (identity verification takes a few days).

@@ -1,6 +1,10 @@
-# Builds an installable Saayam APK on GitHub's servers — no Expo account or local Android SDK needed.
+# Builds Saayam on GitHub's servers — no Expo account or local Android SDK needed.
 # Runs on every push to main, or by hand: Actions → "Build Android APK" → Run workflow.
-# The APK appears as a GitHub Release (public download) and as a workflow artifact.
+#
+# With the four signing secrets set (Settings → Secrets and variables → Actions):
+#   ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD
+# it produces an APK and a Play Store bundle (.aab) signed with your private upload key.
+# Without them it produces a test APK signed with the public debug key.
 name: Build Android APK
 
 on:
@@ -41,23 +45,53 @@ jobs:
         env:
           CI: 1
 
-      - name: Build release APK
+      - name: Use the private upload key (if the secrets are set)
+        id: sign
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/upload.keystore"
+            python3 scripts/android-signing.py
+            echo "signed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Signing secrets not set — building a TEST APK with the public debug key. No Play Store bundle."
+            echo "signed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build release APK (and Play Store bundle when signed)
         working-directory: android
-        run: ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a,armeabi-v7a -Dorg.gradle.jvmargs=-Xmx4g
+        env:
+          SAAYAM_KEYSTORE_PATH: ${{ runner.temp }}/upload.keystore
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          TASKS="assembleRelease"
+          if [ "${{ steps.sign.outputs.signed }}" = "true" ]; then TASKS="assembleRelease bundleRelease"; fi
+          ./gradlew $TASKS --no-daemon -Dorg.gradle.jvmargs=-Xmx4g -PreactNativeArchitectures=arm64-v8a,armeabi-v7a
 
       - name: Name the APK
         id: apk
         run: |
           VERSION=$(node -p "require('./app.json').expo.version")
+          CODE=$(node -p "require('./app.json').expo.android.versionCode")
           NAME="saayam-v${VERSION}-build${GITHUB_RUN_NUMBER}.apk"
           cp android/app/build/outputs/apk/release/app-release.apk "$NAME"
+          FILES="$NAME"
+          if [ "${{ steps.sign.outputs.signed }}" = "true" ]; then
+            AAB="saayam-v${VERSION}-code${CODE}-playstore.aab"
+            cp android/app/build/outputs/bundle/release/app-release.aab "$AAB"
+            FILES="$NAME"$'\n'"$AAB"
+          fi
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          { echo "files<<EOF"; echo "$FILES"; echo "EOF"; } >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-artifact@v4
         with:
-          name: saayam-apk
-          path: ${{ steps.apk.outputs.name }}
+          name: saayam-build
+          path: ${{ steps.apk.outputs.files }}
 
       - name: Publish as a GitHub Release
         uses: softprops/action-gh-release@v2
@@ -65,7 +99,7 @@ jobs:
           tag_name: v${{ steps.apk.outputs.version }}-build${{ github.run_number }}
           name: Saayam ${{ steps.apk.outputs.version }} (build ${{ github.run_number }})
           body: |
-            Test build of Saayam. Download the .apk below on an Android phone and open it to install
+            Saayam ${{ steps.apk.outputs.version }}. Download the .apk on an Android phone and open it to install
             (allow "Install unknown apps" for your browser or Files app when asked).
-            This build is signed with a test key — for Google Play, build the .aab with `eas build --profile production`.
-          files: ${{ steps.apk.outputs.name }}
+            ${{ steps.sign.outputs.signed == 'true' && 'Signed with the Saayam upload key. The .aab file is for uploading to Google Play.' || 'TEST BUILD signed with the public debug key — not for the Play Store.' }}
+          files: ${{ steps.apk.outputs.files }}

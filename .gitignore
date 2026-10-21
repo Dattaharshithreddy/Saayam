@@ -43,3 +43,6 @@ yarn-error.*
 # local tools
 .claude/
 server/feedback.jsonl
+*.keystore
+android/
+ios/
