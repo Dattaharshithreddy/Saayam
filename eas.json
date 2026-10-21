@@ -16,7 +16,7 @@
       },
       "env": {
         "EXPO_PUBLIC_PRIVACY_URL": "https://dattaharshithreddy.github.io/Saayam/privacy-policy.html",
-        "EXPO_PUBLIC_CONTACT_EMAIL": "dattaharshithreddy@gmail.com"
+        "EXPO_PUBLIC_CONTACT_EMAIL": "saayam.support@gmail.com"
       }
     },
     "production": {
@@ -26,7 +26,7 @@
       },
       "env": {
         "EXPO_PUBLIC_PRIVACY_URL": "https://dattaharshithreddy.github.io/Saayam/privacy-policy.html",
-        "EXPO_PUBLIC_CONTACT_EMAIL": "dattaharshithreddy@gmail.com"
+        "EXPO_PUBLIC_CONTACT_EMAIL": "saayam.support@gmail.com"
       }
     }
   },

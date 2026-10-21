@@ -5,7 +5,7 @@ Add Telugu as a second language (Store listing → Manage translations → Telug
 Character counts were checked against Play's limits (title 30, short description 80, full description 4000).
 
 **App category:** Books & Reference · **Tags:** Reference, Education
-**Contact email:** dattaharshithreddy@gmail.com · **Privacy policy URL:** https://dattaharshithreddy.github.io/Saayam/privacy-policy.html
+**Contact email:** saayam.support@gmail.com · **Privacy policy URL:** https://dattaharshithreddy.github.io/Saayam/privacy-policy.html
 
 ---
 

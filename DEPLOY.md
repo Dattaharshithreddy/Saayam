@@ -7,7 +7,7 @@ phone, and "Report wrong information" opens the user's email app. Three steps:
 ## 1. Contact email & privacy policy page
 
 Play needs a public URL.
-1. Pick the email that should receive reports and guide requests (a new Gmail like saayam.app@… is fine). Replace every `dattaharshithreddy@gmail.com` in `docs/privacy-policy.html` with it.
+1. Pick the email that should receive reports and guide requests (a new Gmail like saayam.app@… is fine). Replace every `saayam.support@gmail.com` in `docs/privacy-policy.html` with it.
 2. Host it — easiest: GitHub repo → Settings → Pages → deploy from branch, folder `/docs`. URL becomes `https://<user>.github.io/<repo>/privacy-policy.html`.
 3. Put that URL in `eas.json` (`EXPO_PUBLIC_PRIVACY_URL`) and in Play Console → App content → Privacy policy.
 

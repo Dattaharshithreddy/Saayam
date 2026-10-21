@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 export const PRIVACY_URL = process.env.EXPO_PUBLIC_PRIVACY_URL || 'https://dattaharshithreddy.github.io/Saayam/privacy-policy.html';
 
 /** Where reports and guide requests are emailed; also shown on the About screen. */
-export const CONTACT_EMAIL = process.env.EXPO_PUBLIC_CONTACT_EMAIL || 'dattaharshithreddy@gmail.com';
+export const CONTACT_EMAIL = process.env.EXPO_PUBLIC_CONTACT_EMAIL || 'saayam.support@gmail.com';
 
 import appJson from '../app.json';
 
