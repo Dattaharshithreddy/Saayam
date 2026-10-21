@@ -1,11 +1,15 @@
+import { useState } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { APP_VERSION, CONTACT_EMAIL, OFFICIAL_SOURCES, PRIVACY_URL } from '../src/config';
 import { guides } from '../src/data/guides';
 import { ui } from '../src/i18n';
+import { useContent } from '../src/content';
 import { useLang } from '../src/LanguageContext';
 import { colors, radius, space, type } from '../src/theme';
 
 export default function AboutScreen() {
+  const content = useContent();
+  const [upd, setUpd] = useState('');
   const { t } = useLang();
   return (
     <ScrollView contentContainerStyle={s.page}>
@@ -20,6 +24,22 @@ export default function AboutScreen() {
         <Text style={s.body}>{t(ui.whatIsSaayamBody).replace('{n}', String(guides.length))}</Text>
       </Card>
 
+      <Card title={t(ui.updatesTitle)}>
+        <Text style={s.body}>{t(ui.updatesBody).replace('{date}', content.date)}</Text>
+        <Pressable
+          style={s.link}
+          disabled={content.checking}
+          onPress={async () => {
+            setUpd(t(ui.updChecking));
+            const r = await content.checkNow();
+            setUpd(t(r === 'updated' ? ui.updDone : r === 'latest' ? ui.updLatest : ui.updOffline));
+          }}
+        >
+          <Text style={s.linkText}>🔄 {t(ui.checkUpdates)}</Text>
+        </Pressable>
+        {!!upd && <Text style={s.url}>{upd}</Text>}
+      </Card>
+
       <Card title={t(ui.sourcesTitle)}>
         <Text style={s.body}>{t(ui.sourcesBody)}</Text>
         {OFFICIAL_SOURCES.map((src) => (
@@ -31,7 +51,7 @@ export default function AboutScreen() {
       </Card>
 
       <Card title={t(ui.privacyTitle)}>
-        {[ui.privacy1, ui.privacy2, ui.privacy3, ui.privacy4].map((p, i) => (
+        {[ui.privacy1, ui.privacy2, ui.privacy3, ui.privacy4, ui.privacy5].map((p, i) => (
           <View key={i} style={s.row}>
             <Text style={s.dot}>•</Text>
             <Text style={s.body}>{t(p)}</Text>

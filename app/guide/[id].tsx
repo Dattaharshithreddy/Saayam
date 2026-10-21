@@ -18,11 +18,14 @@ import { Bullet, CheckRow, LevelBadge, Section, Step } from '../../src/component
 import { getGuide } from '../../src/data/guides';
 import { guideSections, guideShareText } from '../../src/guideText';
 import { ui } from '../../src/i18n';
+import { useContent } from '../../src/content';
+import { reminderForGuide } from '../../src/data/reminders';
 import { useLang } from '../../src/LanguageContext';
 import { usePrefs } from '../../src/prefs';
 import { colors, radius, space, type } from '../../src/theme';
 
 export default function GuideScreen() {
+  useContent();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { lang, t } = useLang();
   const prefs = usePrefs();
@@ -81,6 +84,16 @@ export default function GuideScreen() {
     <ScrollView contentContainerStyle={s.page}>
       <LevelBadge level={g.level} />
       <Text style={[s.title, { fontSize: type.h1 * sc, lineHeight: 34 * sc }]}>{t(g.title)}</Text>
+
+      {!!reminderForGuide[g.id] && (
+        <Pressable
+          style={s.remindBtn}
+          onPress={() => router.push({ pathname: '/reminders', params: { add: reminderForGuide[g.id] } })}
+          accessibilityRole="button"
+        >
+          <Text style={s.remindText}>{t(ui.remindMe)}</Text>
+        </Pressable>
+      )}
 
       <View style={s.actions}>
         <Action icon={speaking ? '⏹️' : '🔊'} label={t(speaking ? ui.stopReading : ui.readAloud)} onPress={toggleSpeak} active={speaking} />
@@ -326,6 +339,8 @@ const s = StyleSheet.create({
   checked: { color: colors.warnInk, fontSize: 12, marginTop: space.sm },
   reportBtn: { marginTop: space.md, alignSelf: 'flex-start' },
   reportText: { color: colors.warnInk, fontSize: type.small, fontWeight: '800', textDecorationLine: 'underline' },
+  remindBtn: { alignSelf: 'flex-start', backgroundColor: colors.accentSoft, borderRadius: 999, paddingHorizontal: 14, paddingVertical: 8, marginTop: space.sm },
+  remindText: { color: '#8A4510', fontWeight: '800', fontSize: type.small },
   askBtn: { backgroundColor: colors.primary, borderRadius: radius.md, paddingVertical: 16, alignItems: 'center' },
   askBtnText: { color: '#fff', fontSize: type.body, fontWeight: '800' },
   modalBg: { flex: 1, backgroundColor: 'rgba(0,0,0,0.35)', justifyContent: 'flex-end' },

@@ -30,7 +30,7 @@ On every guide page:
 - **🚩 Report wrong information** — opens the user's email app addressed to
   `EXPO_PUBLIC_CONTACT_EMAIL` (if a server URL is set instead, it's posted to `/feedback`).
 
-**155 full step-by-step guides** across 16 topics — every one a complete walkthrough (stages from start to finish, a worked cost example, common problems and fixes, what to do afterwards) — plus an **A–Z directory of 165 services**
+**172 full step-by-step guides** across 16 topics — every one a complete walkthrough (stages from start to finish, a worked cost example, common problems and fixes, what to do afterwards) — plus an **A–Z directory of 182 services**
 where every entry opens its full guide (checked 19 Oct 2026). Each guide has: who can apply,
 documents checklist, fees, numbered steps, where to go, timeline, tips, official links and
 helplines — all in English and Telugu.
@@ -52,6 +52,12 @@ helplines — all in English and Telugu.
 | Self-Employment & Business | Mudra · SVANidhi · Vishwakarma · Starting a small business · PMEGP · PMFME food processing · AP MSME approvals & incentives · BC/SC/ST/minority/Kapu/EWS corporation loans · Join an SHG (DWCRA) · SHG loans & Streenidhi |
 | Temples, NRIs & Abroad | TTD darshan · AP temple bookings · Pravasandhra Bharosa insurance · Safe overseas jobs · Help for family stuck abroad · NRI property |
 | ID Cards & Online | Mana Mitra · Aadhaar update · Lost Aadhaar / PVC · Aadhaar bank seeding (DBT) · Children's Aadhaar · Aadhaar misuse lock · PAN · Passport · Voter ID · DigiLocker |
+
+## Tools
+
+- **What can we get?** — a short questionnaire (age, category, work, family) that lists every scheme the family may be eligible for. Rules are plain data in `src/data/eligibility.ts`.
+- **My reminders** — licence, insurance, PUC, fitness, permit, road tax, passport, pensioner life certificate, ITR, crop insurance, property tax and more, with local phone notifications. Templates in `src/data/reminders.ts`.
+- **Over-the-air guide updates** — the app downloads newer guides from GitHub Pages (`docs/content/`), validated before use. See DEPLOY.md.
 
 ## Run the app
 

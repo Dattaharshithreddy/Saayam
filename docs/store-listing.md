@@ -23,6 +23,9 @@ Unofficial step-by-step help for AP & central govt services in Telugu & English
 
 Saayam (సాయం — "help") explains government processes in simple Telugu and English, so ordinary people know exactly what to do before they go to an office.
 
+✅ "What can we get?" — answer a few questions and see every scheme your family may be eligible for.
+⏰ Reminders — get alerts before licence, insurance, tax and pension-certificate dates.
+
 Every guide tells you:
 • Who can apply
 • Documents to carry — with a tick-off checklist
@@ -34,7 +37,7 @@ Every guide tells you:
 • Tips to avoid middlemen and common mistakes
 • Official links and helpline numbers
 
-150+ guides, including:
+170+ guides, including:
 ⚖️ Law & your rights — police sections (BNS / old IPC) in simple words, arrest & bail, FIR to court case, cheque bounce, divorce & maintenance, land disputes, claiming a deceased person's money
 🏠 Land & property — registration, name mistakes in deeds, mutation (1B/Adangal), EC, 22A prohibited land, subdivision, Will/GPA
 📜 Certificates — caste, income, EWS, OBC, birth & death, legal heir, marriage, name change, disability (SADAREM)
@@ -87,6 +90,9 @@ AP & కేంద్ర ప్రభుత్వ సేవలకు తెలు
 
 సాయం ప్రభుత్వ ప్రక్రియలను సులభమైన తెలుగు, ఇంగ్లీష్‌లో వివరిస్తుంది — ఆఫీసుకు వెళ్లే ముందే ఏం చేయాలో సామాన్యులకు ఖచ్చితంగా తెలుస్తుంది.
 
+✅ "మాకు ఏమేమి వస్తాయి?" — కొన్ని ప్రశ్నలకు సమాధానం ఇస్తే మీ కుటుంబానికి అర్హత ఉండే ప్రతి పథకం చూపిస్తుంది.
+⏰ రిమైండర్లు — లైసెన్స్, బీమా, పన్ను, పెన్షన్ ధృవీకరణ తేదీలకు ముందే హెచ్చరికలు.
+
 ప్రతి గైడ్‌లో:
 • ఎవరు అర్హులు
 • తీసుకెళ్లాల్సిన పత్రాలు — టిక్ చేసే చెక్‌లిస్ట్‌తో
@@ -98,7 +104,7 @@ AP & కేంద్ర ప్రభుత్వ సేవలకు తెలు
 • మధ్యవర్తులు, సాధారణ తప్పుల నుండి జాగ్రత్తలు
 • అధికారిక లింకులు, హెల్ప్‌లైన్ నంబర్లు
 
-150కి పైగా గైడ్‌లు:
+170కి పైగా గైడ్‌లు:
 ⚖️ చట్టం & మీ హక్కులు — పోలీస్ సెక్షన్లు (BNS / పాత IPC) సులభంగా, అరెస్ట్ & బెయిల్, FIR నుండి కోర్టు కేసు వరకు, చెక్ బౌన్స్, విడాకులు & భరణం, భూ వివాదాలు, మరణించినవారి డబ్బు క్లెయిమ్
 🏠 భూమి & ఆస్తి — రిజిస్ట్రేషన్, డీడ్‌లో పేరు తప్పు, మ్యుటేషన్ (1B/అడంగల్), EC, 22A నిషేధిత భూమి, సబ్‌డివిజన్, వీలునామా/GPA
 📜 సర్టిఫికెట్లు — కుల, ఆదాయ, EWS, OBC, జనన & మరణ, వారసత్వ, వివాహ, పేరు మార్పు, వికలాంగ (SADAREM)
@@ -138,6 +144,12 @@ A+ పెద్ద అక్షరాలు
 ---
 
 ## Release notes
+
+v1.3.0
+
+EN: New "What can we get?" — answer a few questions and see every scheme your family may be eligible for. New "My reminders" — get alerts before your licence, insurance, tax, pension-certificate and other dates. Guides now update by themselves when you are online. 17 more guides: SSC/Inter revaluation, Navodaya/Sainik/KV admissions and NMMS, dog bites, hospital complaints, adoption, PMAY-Urban, Shakti app, soil testing and solar pumps, FPOs and natural farming, GST, FSSAI, trademarks, MSME payment delays, export (IEC), Agniveer, police recruitment and fishing boat registration.
+
+TE: కొత్తది "మాకు ఏమేమి వస్తాయి?" — కొన్ని ప్రశ్నలకు సమాధానం ఇస్తే మీ కుటుంబానికి అర్హత ఉండే ప్రతి పథకం చూపిస్తుంది. కొత్తది "నా రిమైండర్లు" — లైసెన్స్, బీమా, పన్ను, పెన్షన్ ధృవీకరణ తదితర తేదీలకు ముందే హెచ్చరికలు. ఇంటర్నెట్ ఉన్నప్పుడు గైడ్‌లు తమంతట తామే అప్‌డేట్ అవుతాయి. మరో 17 గైడ్‌లు: SSC/ఇంటర్ రీవాల్యుయేషన్, నవోదయ/సైనిక్/KV ప్రవేశాలు, NMMS, కుక్క కాటు, ఆసుపత్రి ఫిర్యాదులు, దత్తత, PMAY-అర్బన్, శక్తి యాప్, మట్టి పరీక్ష, సోలార్ పంపులు, FPOలు, ప్రకృతి వ్యవసాయం, GST, FSSAI, ట్రేడ్‌మార్క్, MSME చెల్లింపు ఆలస్యం, ఎగుమతి (IEC), అగ్నివీర్, పోలీస్ నియామకం, ఫిషింగ్ పడవ నమోదు.
 
 v1.2.0
 

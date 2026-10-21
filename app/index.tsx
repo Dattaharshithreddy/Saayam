@@ -8,6 +8,7 @@ import { searchDirectory } from '../src/data/directory';
 import { guides, searchGuides } from '../src/data/guides';
 import { DirRow } from '../src/DirRow';
 import { ui } from '../src/i18n';
+import { useContent } from '../src/content';
 import { useLang } from '../src/LanguageContext';
 import { usePrefs } from '../src/prefs';
 import { colors, radius, space, type } from '../src/theme';
@@ -23,15 +24,16 @@ const POPULAR = [
 ];
 
 export default function Home() {
+  const { version } = useContent();
   const { t } = useLang();
   const router = useRouter();
   const { saved } = usePrefs();
   const savedGuides = saved.map((id) => guides.find((g) => g.id === id)).filter((g) => g !== undefined);
   const [query, setQuery] = useState('');
-  const results = useMemo(() => searchGuides(query), [query]);
+  const results = useMemo(() => searchGuides(query), [query, version]);
   const dirResults = useMemo(
     () => (query.trim() ? searchDirectory(query).filter((e) => !e.guideId) : []),
-    [query],
+    [query, version],
   );
   const searching = query.trim().length > 0;
 
@@ -71,6 +73,17 @@ export default function Home() {
         ) : (
           <>
             <AskCard />
+
+            <View style={s.tools}>
+              <Pressable style={[s.tool, s.toolElig]} onPress={() => router.push('/eligibility')} accessibilityRole="button">
+                <Text style={s.toolTitle}>✅ {t(ui.eligTitle)}</Text>
+                <Text style={s.toolBlurb}>{t(ui.eligBlurb)}</Text>
+              </Pressable>
+              <Pressable style={[s.tool, s.toolRem]} onPress={() => router.push('/reminders')} accessibilityRole="button">
+                <Text style={s.toolTitle}>⏰ {t(ui.remTitle)}</Text>
+                <Text style={s.toolBlurb}>{t(ui.remBlurb)}</Text>
+              </Pressable>
+            </View>
 
             <Pressable style={s.dirBtn} onPress={() => router.push('/directory')}>
               <Text style={s.dirBtnTitle}>{t(ui.directoryButton)}</Text>
@@ -172,13 +185,18 @@ const s = StyleSheet.create({
   tileIcon: { fontSize: 26 },
   tileTitle: { fontSize: type.body, fontWeight: '800', color: colors.ink, marginTop: space.sm },
   tileBlurb: { fontSize: 13, color: colors.muted, marginTop: 2, lineHeight: 18 },
+  tools: { flexDirection: 'row', gap: space.md, marginTop: -space.md, marginBottom: space.xl },
+  tool: { flex: 1, borderRadius: radius.lg, padding: space.md, borderWidth: 1.5 },
+  toolElig: { backgroundColor: colors.accentSoft, borderColor: colors.accent },
+  toolRem: { backgroundColor: colors.primarySoft, borderColor: colors.primary },
+  toolTitle: { fontSize: type.body, fontWeight: '900', color: colors.ink },
+  toolBlurb: { fontSize: 13, color: colors.muted, marginTop: 4, lineHeight: 18 },
   dirBtn: {
     backgroundColor: colors.card,
     borderWidth: 1.5,
     borderColor: colors.primary,
     borderRadius: radius.lg,
     padding: space.lg,
-    marginTop: -space.md,
     marginBottom: space.xl,
   },
   dirBtnTitle: { fontSize: type.h3, fontWeight: '800', color: colors.primary },

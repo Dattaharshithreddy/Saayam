@@ -14,7 +14,9 @@ export type Action =
   | { kind: 'open'; id: string }
   | { kind: 'topics' }
   | { kind: 'request' }
-  | { kind: 'whatsapp' };
+  | { kind: 'whatsapp' }
+  | { kind: 'eligibility' }
+  | { kind: 'reminders' };
 
 export type Chip = { label: string; action: Action };
 
@@ -73,12 +75,21 @@ export function has(q: string, word: string): boolean {
 
 type Indexed = { g: Guide; keywords: string[]; titleWords: string[] };
 
-const index: Indexed[] = guides.map((g) => {
-  const titleWords = [g.title.en, g.title.te]
-    .flatMap((t) => normalize(t).trim().split(' '))
-    .filter((w) => (TELUGU.test(w) ? w.length >= 3 : w.length >= 4 && !stopWords.has(w)));
-  return { g, keywords: g.keywords, titleWords: [...new Set(titleWords)] };
-});
+function buildIndex(): Indexed[] {
+  return guides.map((g) => {
+    const titleWords = [g.title.en, g.title.te]
+      .flatMap((t) => normalize(t).trim().split(' '))
+      .filter((w) => (TELUGU.test(w) ? w.length >= 3 : w.length >= 4 && !stopWords.has(w)));
+    return { g, keywords: g.keywords ?? [], titleWords: [...new Set(titleWords)] };
+  });
+}
+
+let index: Indexed[] = buildIndex();
+
+/** Call after the guides list has been replaced by a content update. */
+export function rebuildIndex() {
+  index = buildIndex();
+}
 
 /** Score every guide for a query. Higher is better. */
 export function rank(query: string): { id: string; score: number }[] {
@@ -109,7 +120,20 @@ function detectSection(q: string): Section | undefined {
 
 // ───────────────────────────────────────── replies
 
+const toolWords = {
+  eligibility: ['what can i get', 'what can we get', 'eligible', 'eligibility', 'which schemes', 'schemes for me', 'naku emi vastayi', 'maku emi vastayi', 'ఏమేమి వస్తాయి', 'ఏమి వస్తాయి', 'అర్హత', 'ఏ పథకాలు'],
+  reminders: ['remind', 'reminder', 'alert me', 'gurthu cheyi', 'గుర్తు చేయ', 'రిమైండర్'],
+};
+
 const L_ = {
+  toolElig: tx(
+    'Answer a few quick questions and I\'ll show every scheme your family may be eligible for.',
+    'కొన్ని చిన్న ప్రశ్నలకు సమాధానం ఇవ్వండి — మీ కుటుంబానికి అర్హత ఉండే ప్రతి పథకం చూపిస్తాను.',
+  ),
+  toolRem: tx(
+    'I can remind you before your licence, insurance, tax or pension-certificate dates. Open reminders:',
+    'లైసెన్స్, బీమా, పన్ను, పెన్షన్ ధృవీకరణ తేదీలకు ముందే గుర్తు చేయగలను. రిమైండర్లు తెరవండి:',
+  ),
   welcome: tx(
     'Namaste! I\'m Saayam. Tell me your problem in your own words — in Telugu or English — or pick a topic below.\n\nFor example: "my father died, land in his name", "caste certificate", "pension not received", "TTD darshan".',
     'నమస్తే! నేను సాయం. మీ సమస్యను మీ మాటల్లో చెప్పండి — తెలుగు లేదా ఇంగ్లీష్‌లో — లేదా కింద విభాగం ఎంచుకోండి.\n\nఉదాహరణకు: "నాన్న చనిపోయారు, భూమి ఆయన పేరు మీద ఉంది", "కుల ధృవీకరణ పత్రం", "పెన్షన్ రాలేదు", "TTD దర్శనం".',
@@ -238,6 +262,14 @@ export function respond(input: string, lang: Lang, focus?: string): BotReply {
   // "Fee?" / "documents enti?" about the guide we're already discussing.
   if (section && focused && (!best || best.score < 8 || best.id === focused.id)) {
     return { text: sectionText(focused, section, lang), chips: sectionChips(focused.id, lang, section), focus: focused.id };
+  }
+
+  // Tools: eligibility checker and reminders.
+  if (toolWords.eligibility.some((w) => has(q, w)) && (!best || best.score < 10)) {
+    return { text: T(L_.toolElig, lang), chips: [{ label: lang === 'te' ? '✅ మాకు ఏమేమి వస్తాయి?' : '✅ What can we get?', action: { kind: 'eligibility' } }] };
+  }
+  if (toolWords.reminders.some((w) => has(q, w))) {
+    return { text: T(L_.toolRem, lang), chips: [{ label: lang === 'te' ? '⏰ నా రిమైండర్లు' : '⏰ My reminders', action: { kind: 'reminders' } }] };
   }
 
   // A life situation ("my father died", "going to Gulf").

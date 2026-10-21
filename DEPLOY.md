@@ -33,6 +33,20 @@ Test the preview APK on a real phone: Telugu text, read aloud, share to WhatsApp
 5. New personal accounts: closed test with **12+ testers for 14 days** before production (plan in `docs/play-console-answers.md`).
 6. Each later update: bump `version` in `app.json` (e.g. 1.0.1); `versionCode` is bumped automatically by the production profile.
 
+## Updating guides without a new APK
+
+Phones download newer guides from GitHub Pages by themselves (at most every 6 hours, when online).
+**GitHub Pages must be on:** repo Settings → Pages → Source: *Deploy from a branch* → `main` / `docs`.
+
+To publish a correction or new guide:
+
+1. Edit the guide in `src/data/…`.
+2. In `src/data/version.ts`, raise `CONTENT_VERSION` (e.g. `2026102101` → `2026102501`) and set `CONTENT_DATE`.
+3. Run `npx tsc --noEmit && npx tsx scripts/build-content.ts` — it validates everything and writes `docs/content/`.
+4. Commit and push with `[skip ci]` in the message (no new APK needed). Within a few minutes Pages serves it and phones pick it up.
+
+The script refuses to publish content that fails validation, and the app checks it again before using it, so a bad file can't break the app. If you change the *shape* of the data (new fields the old app can't show), raise `MIN_APP` in the script — older apps will then ignore the update.
+
 ## Later: turn on AI answers (optional)
 
 Not needed for version 1. When you want AI answers in addition to the offline helper:

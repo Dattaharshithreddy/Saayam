@@ -538,8 +538,8 @@ if (__DEV__) {
 
 export function searchDirectory(query: string): DirEntry[] {
   const q = query.trim().toLowerCase();
-  if (!q) return entries;
-  return entries.filter((e) =>
+  if (!q) return directory;
+  return directory.filter((e) =>
     [e.title.en, e.title.te, e.what.en, e.what.te, e.where.en].some((s) => s.toLowerCase().includes(q)),
   );
 }

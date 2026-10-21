@@ -3,10 +3,12 @@ import { SectionList, StyleSheet, Text, TextInput, View } from 'react-native';
 import { dirGroups, searchDirectory } from '../src/data/directory';
 import { DirRow } from '../src/DirRow';
 import { ui } from '../src/i18n';
+import { useContent } from '../src/content';
 import { useLang } from '../src/LanguageContext';
 import { colors, radius, space, type } from '../src/theme';
 
 export default function DirectoryScreen() {
+  const { version } = useContent();
   const { t } = useLang();
   const [query, setQuery] = useState('');
   const sections = useMemo(() => {
@@ -14,7 +16,7 @@ export default function DirectoryScreen() {
     return dirGroups
       .map((g) => ({ key: g.id, title: t(g.title), data: found.filter((e) => e.group === g.id) }))
       .filter((s) => s.data.length > 0);
-  }, [query, t]);
+  }, [query, t, version]);
 
   return (
     <SectionList

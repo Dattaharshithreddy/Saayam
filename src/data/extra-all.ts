@@ -5,7 +5,8 @@ import { transportGuides, transportDir } from './extra-transport';
 import { moneyGuides, moneyDir } from './extra-money';
 import { lifeGuides, lifeDir } from './extra-life';
 import { moreExtraGuides, moreExtraDir } from './extra-more';
+import { more2Guides, more2Dir } from './extra-more2';
 
 /** Guides added in the second content expansion, with their A–Z directory lines. */
-export const extraGuides: Guide[] = [...lawGuides, ...transportGuides, ...moneyGuides, ...lifeGuides, ...moreExtraGuides];
-export const extraDir: XDir[] = [...lawDir, ...transportDir, ...moneyDir, ...lifeDir, ...moreExtraDir];
+export const extraGuides: Guide[] = [...lawGuides, ...transportGuides, ...moneyGuides, ...lifeGuides, ...moreExtraGuides, ...more2Guides];
+export const extraDir: XDir[] = [...lawDir, ...transportDir, ...moneyDir, ...lifeDir, ...moreExtraDir, ...more2Dir];

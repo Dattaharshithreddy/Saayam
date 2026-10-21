@@ -3,10 +3,12 @@ import { ScrollView, StyleSheet, Text } from 'react-native';
 import { GuideCard } from '../../src/components';
 import { categories } from '../../src/data/categories';
 import { guides } from '../../src/data/guides';
+import { useContent } from '../../src/content';
 import { useLang } from '../../src/LanguageContext';
 import { colors, space, type } from '../../src/theme';
 
 export default function CategoryScreen() {
+  useContent();
   const { id } = useLocalSearchParams<{ id: string }>();
   const { t } = useLang();
   const cat = categories.find((c) => c.id === id);

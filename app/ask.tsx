@@ -8,6 +8,7 @@ import { LevelBadge } from '../src/components';
 import { getGuide } from '../src/data/guides';
 import { sendReport } from '../src/feedback';
 import { ui } from '../src/i18n';
+import { useContent } from '../src/content';
 import { useLang } from '../src/LanguageContext';
 import { usePrefs } from '../src/prefs';
 import { colors, radius, space, type } from '../src/theme';
@@ -16,6 +17,7 @@ type Msg = { from: 'bot' | 'me'; text: string; results?: string[]; chips?: Chip[
 
 /** Saayam — offline helper that answers only from the guides inside the app. */
 export default function SaayamBot() {
+  useContent();
   const params = useLocalSearchParams<{ q?: string; guide?: string }>();
   const router = useRouter();
   const { lang, t } = useLang();
@@ -76,6 +78,8 @@ export default function SaayamBot() {
     started.current = true;
     if (a.kind === 'open') return router.push(`/guide/${a.id}`);
     if (a.kind === 'whatsapp') return Linking.openURL('https://wa.me/919552300009?text=Hi');
+    if (a.kind === 'eligibility') return router.push('/eligibility');
+    if (a.kind === 'reminders') return router.push('/reminders');
     if (a.kind === 'request') {
       setMsgs((m) => [...m, { from: 'me', text: c.label }, { from: 'bot', text: requestPrompt(lang) }]);
       const body = `${lang === 'te' ? 'నాకు ఈ విషయంపై గైడ్ కావాలి' : 'I need a guide about'}: ${lastQuestion.current || '…'}`;
