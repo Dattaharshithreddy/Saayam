@@ -356,7 +356,7 @@ const baseGuides: Guide[] = [
       { en: 'This scheme was earlier called YSR Pension Kanuka.', te: 'ఈ పథకాన్ని ఇంతకుముందు YSR పెన్షన్ కానుక అనేవారు.' },
     ],
     links: [
-      { label: 'Village & Ward Secretariat (GSWS)', url: 'https://gsws.ap.gov.in' },
+      { label: 'Government of Andhra Pradesh', url: 'https://www.ap.gov.in' },
     ],
     lastChecked: '2026-10-19',
   },
@@ -413,7 +413,6 @@ const baseGuides: Guide[] = [
       { en: 'The most common reason for missing money is a bank account not linked to Aadhaar for DBT. Fix that first.', te: 'డబ్బు రాకపోవడానికి ఎక్కువగా కారణం — DBT కోసం బ్యాంక్ ఖాతా ఆధార్‌తో లింక్ కాకపోవడం. ముందు అది సరిచేయండి.' },
     ],
     links: [
-      { label: 'NBM beneficiary portal', url: 'https://gsws-nbm.ap.gov.in' },
     ],
     lastChecked: '2026-10-19',
   },

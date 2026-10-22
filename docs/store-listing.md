@@ -1,5 +1,7 @@
 # Google Play store listing — Saayam
 
+Every source website must be listed in the full description (Play Misleading Claims policy for government information). Regenerate the list with `npx tsx scripts/sources.ts` after adding links.
+
 Paste these into Play Console → Grow → Store presence → Main store listing.
 Add Telugu as a second language (Store listing → Manage translations → Telugu) and paste the Telugu text there.
 Character counts were checked against Play's limits (title 30, short description 80, full description 4000).
@@ -19,60 +21,15 @@ Unofficial step-by-step help for AP & central govt services in Telugu & English
 
 **Full description (≤4000):**
 
-⚠️ Saayam is NOT an official government app. It is not made by, linked to or approved by the Government of Andhra Pradesh, the Government of India or any government department. You cannot apply for any service inside Saayam — it explains the process and points you to the official office or website.
+⚠️ Saayam is NOT an official government app. It is not made by, linked to or approved by the Government of Andhra Pradesh, the Government of India or any government department. You cannot apply for any service in Saayam — it explains the process and points you to the official office or website.
 
-Saayam (సాయం — "help") explains government processes in simple Telugu and English, so ordinary people know exactly what to do before they go to an office.
+Saayam explains 170+ AP and central government processes in simple Telugu and English: who can apply, documents, fees, a step-by-step walkthrough, common problems, where to go and official links. Also: scheme eligibility checker, date reminders, read aloud and an offline helper. No sign-up, no ads, no data collected.
 
-✅ "What can we get?" — answer a few questions and see every scheme your family may be eligible for.
-⏰ Reminders — get alerts before licence, insurance, tax and pension-certificate dates.
+SOURCES OF INFORMATION
+All information in Saayam comes only from these official government websites (complete list). Each guide links to its exact official page:
+abha.abdm.gov.in · aissee.nta.nic.in · annadathasukhibhava.ap.gov.in · ap.gov.in · ap.meeseva.gov.in · apcmrf.ap.gov.in · apcpdcl.in · apdpms.ap.gov.in · apeasternpower.com · aphc.gov.in · apindustries.gov.in · apmepma.gov.in · apnrts.ap.gov.in · apopenschool.ap.gov.in · appointments.uidai.gov.in · apprenticeshipindia.gov.in · apsdma.ap.gov.in · apspdcl.in · apsrtconline.in · apssdc.in · aptemples.ap.gov.in · beneficiary.nha.gov.in · bie.ap.gov.in · bimabharosa.irdai.gov.in · bocwwb.ap.gov.in · bse.ap.gov.in · cap.apcfss.in · cara.wcd.gov.in · cdma.ap.gov.in · cets.apsche.ap.gov.in · cioins.co.in · citizen.appolice.gov.in · cms.rbi.org.in · consumerhelpline.gov.in · cse.ap.gov.in · cybercrime.gov.in · dahd.gov.in · dc.crsorgi.gov.in · dgft.gov.in · digilocker.gov.in · digitalpanchayat.ap.gov.in · drntr.uhsap.in · e-jagriti.gov.in · echallan.parivahan.gov.in · emigrate.gov.in · epdsap.ap.gov.in · epfigms.gov.in · eraktkosh.mohfw.gov.in · esanjeevani.mohfw.gov.in · eshram.gov.in · foscos.fssai.gov.in · gst.gov.in · iepf.gov.in · incometax.gov.in · indiacode.nic.in · indiapost.gov.in · ipindia.gov.in · irctc.co.in · jansamarth.in · jansuraksha.gov.in · jeevanpramaan.gov.in · jnanabhumi.ap.gov.in · joinindianarmy.nic.in · kviconline.gov.in · madad.gov.in · meebhoomi.ap.gov.in · morth.nic.in · mudra.org.in · myaadhaar.uidai.gov.in · mylpg.in · nalsa.gov.in · nats.education.gov.in · navodaya.gov.in · ncbc.nic.in · ncdc.mohfw.gov.in · ncs.gov.in · neet.nta.nic.in · nios.ac.in · nlm.udyamimitra.in · npci.org.in · nppaindia.nic.in · nredcap.in · nrega.nic.in · parivahan.gov.in · passportindia.gov.in · pfrda.org.in · pgrs.ap.gov.in · pmay-urban.gov.in · pmaymis.gov.in · pmfby.gov.in · pmfme.mofpi.gov.in · pminternship.mca.gov.in · pmjdy.gov.in · pmkisan.gov.in · pmkusum.mnre.gov.in · pmmvy.wcd.gov.in · pmsuryaghar.gov.in · pmsvanidhi.mohua.gov.in · pmuy.gov.in · pmvidyalaxmi.co.in · pmvishwakarma.gov.in · polycetap.ap.gov.in · psc.ap.gov.in · railmadad.indianrailways.gov.in · realcraft.gov.in · registration.ap.gov.in · rera.ap.gov.in · rtionline.gov.in · samadhaan.msme.gov.in · samadhan.labour.gov.in · sancharsaathi.gov.in · sand.ap.gov.in · sarathi.parivahan.gov.in · scholarships.gov.in · serp.ap.gov.in · services.ecourts.gov.in · sfacindia.com · slprb.ap.gov.in · soilhealth.dac.gov.in · swavlambancard.gov.in · tdscpc.gov.in · transgender.dosje.gov.in · ttdevasthanams.ap.gov.in · udgam.rbi.org.in · udyamregistration.gov.in · unifiedportal-mem.epfindia.gov.in · uwin.mohfw.gov.in · vahan.parivahan.gov.in · voters.eci.gov.in
 
-Every guide tells you:
-• Who can apply
-• Documents to carry — with a tick-off checklist
-• Fees and benefit amounts
-• A full walkthrough from start to finish, stage by stage — every click and every counter
-• A worked cost example, common problems and how to fix them, and what to do afterwards
-• Where to go — office or official website
-• How long it takes
-• Tips to avoid middlemen and common mistakes
-• Official links and helpline numbers
-
-170+ guides, including:
-⚖️ Law & your rights — police sections (BNS / old IPC) in simple words, arrest & bail, FIR to court case, cheque bounce, divorce & maintenance, land disputes, claiming a deceased person's money
-🏠 Land & property — registration, name mistakes in deeds, mutation (1B/Adangal), EC, 22A prohibited land, subdivision, Will/GPA
-📜 Certificates — caste, income, EWS, OBC, birth & death, legal heir, marriage, name change, disability (SADAREM)
-🏥 Health — NTR Vaidya Seva, Ayushman Bharat, Vay Vandana (70+), CM Relief Fund, 108/104
-☀️ Electricity — rooftop solar subsidy (PM Surya Ghar), new connections, borewell connections, high bills, meter and supply complaints
-🌾 Farmers — Annadata Sukhibhava, PM-KISAN, crop insurance, paddy at MSP, tenant farmer card, KCC, subsidies
-🤝 Welfare — NTR Bharosa pensions, Talliki Vandanam, free bus, housing, rural job guarantee, seniors, women
-🍚 Rice card, Deepam free gas, Ujjwala
-🎓 Scholarships, EAPCET / ICET / POLYCET / NEET admissions, RTE free seats, hostels, PM Internship, government jobs
-🚗 Driving licence, lorry/bus licence, RC transfer, remove bank loan from RC, permit, fitness and road tax for autos and lorries, challans
-🛡️ Emergency numbers, FIR, police verification, PGRS complaints, RTI, consumer complaints, free legal aid
-🏦 Jan Dhan, ₹20 insurance, Atal Pension, PF withdrawal, income tax return & TDS refund
-💼 Mudra, PMEGP, food-processing subsidy, BC/SC/ST/minority corporation loans, DWCRA / SHG loans
-🛕 TTD & temple darshan booking, safe Gulf jobs, NRI insurance & property
-🪪 Aadhaar (lost card, bank linking for scheme money, children's update, misuse lock), PAN, passport, voter ID, DigiLocker
-
-Made for everyone:
-🔊 Read aloud in Telugu or English
-📤 Share a guide on WhatsApp in one tap
-☆ Save guides you need
-A+ Bigger text
-💬 Saayam helper — type your problem in Telugu, English or Tenglish and get the right guide. Works offline
-
-Where the information comes from:
-Guides are written from official government sources and show the date they were last checked. Main sources:
-• Government of Andhra Pradesh — https://www.ap.gov.in
-• AP MeeSeva — https://ap.meeseva.gov.in
-• Village & Ward Secretariats — https://gsws.ap.gov.in
-• AP Registration & Stamps — https://registration.ap.gov.in
-• Meebhoomi — https://meebhoomi.ap.gov.in
-• National Government Services Portal — https://services.india.gov.in
-• myScheme — https://www.myscheme.gov.in
 Rules and fees change. Always confirm at the office or official website before paying anyone.
-
-Privacy: no sign-up, no ads, no tracking, no data collected. Everything stays on your phone.
 
 ---
 
@@ -88,58 +45,13 @@ AP & కేంద్ర ప్రభుత్వ సేవలకు తెలు
 
 ⚠️ సాయం అధికారిక ప్రభుత్వ యాప్ కాదు. దీన్ని ఆంధ్రప్రదేశ్ ప్రభుత్వం, భారత ప్రభుత్వం లేదా ఏ ప్రభుత్వ శాఖా తయారు చేయలేదు, వాటితో సంబంధం లేదు, ఆమోదించలేదు. ఈ యాప్‌లో ఏ సేవకూ దరఖాస్తు చేయలేరు — ఇది ప్రక్రియను వివరించి, అధికారిక ఆఫీసు లేదా వెబ్‌సైట్‌కు దారి చూపుతుంది.
 
-సాయం ప్రభుత్వ ప్రక్రియలను సులభమైన తెలుగు, ఇంగ్లీష్‌లో వివరిస్తుంది — ఆఫీసుకు వెళ్లే ముందే ఏం చేయాలో సామాన్యులకు ఖచ్చితంగా తెలుస్తుంది.
+సాయం 170కి పైగా AP & కేంద్ర ప్రభుత్వ ప్రక్రియలను సులభమైన తెలుగు, ఇంగ్లీష్‌లో వివరిస్తుంది: ఎవరు అర్హులు, పత్రాలు, ఫీజు, దశలవారీ మార్గదర్శి, సమస్యలు, ఎక్కడికి వెళ్లాలి, అధికారిక లింకులు. అర్హత చెకర్, రిమైండర్లు, చదివి వినిపించడం, ఆఫ్‌లైన్ సహాయకుడు. సైన్ అప్ లేదు, ప్రకటనలు లేవు, డేటా సేకరణ లేదు.
 
-✅ "మాకు ఏమేమి వస్తాయి?" — కొన్ని ప్రశ్నలకు సమాధానం ఇస్తే మీ కుటుంబానికి అర్హత ఉండే ప్రతి పథకం చూపిస్తుంది.
-⏰ రిమైండర్లు — లైసెన్స్, బీమా, పన్ను, పెన్షన్ ధృవీకరణ తేదీలకు ముందే హెచ్చరికలు.
+సమాచార మూలాలు
+సాయంలోని సమాచారం అంతా ఈ అధికారిక ప్రభుత్వ వెబ్‌సైట్ల నుండి మాత్రమే (పూర్తి జాబితా). ప్రతి గైడ్ దాని అధికారిక పేజీకి లింక్ ఇస్తుంది:
+abha.abdm.gov.in · aissee.nta.nic.in · annadathasukhibhava.ap.gov.in · ap.gov.in · ap.meeseva.gov.in · apcmrf.ap.gov.in · apcpdcl.in · apdpms.ap.gov.in · apeasternpower.com · aphc.gov.in · apindustries.gov.in · apmepma.gov.in · apnrts.ap.gov.in · apopenschool.ap.gov.in · appointments.uidai.gov.in · apprenticeshipindia.gov.in · apsdma.ap.gov.in · apspdcl.in · apsrtconline.in · apssdc.in · aptemples.ap.gov.in · beneficiary.nha.gov.in · bie.ap.gov.in · bimabharosa.irdai.gov.in · bocwwb.ap.gov.in · bse.ap.gov.in · cap.apcfss.in · cara.wcd.gov.in · cdma.ap.gov.in · cets.apsche.ap.gov.in · cioins.co.in · citizen.appolice.gov.in · cms.rbi.org.in · consumerhelpline.gov.in · cse.ap.gov.in · cybercrime.gov.in · dahd.gov.in · dc.crsorgi.gov.in · dgft.gov.in · digilocker.gov.in · digitalpanchayat.ap.gov.in · drntr.uhsap.in · e-jagriti.gov.in · echallan.parivahan.gov.in · emigrate.gov.in · epdsap.ap.gov.in · epfigms.gov.in · eraktkosh.mohfw.gov.in · esanjeevani.mohfw.gov.in · eshram.gov.in · foscos.fssai.gov.in · gst.gov.in · iepf.gov.in · incometax.gov.in · indiacode.nic.in · indiapost.gov.in · ipindia.gov.in · irctc.co.in · jansamarth.in · jansuraksha.gov.in · jeevanpramaan.gov.in · jnanabhumi.ap.gov.in · joinindianarmy.nic.in · kviconline.gov.in · madad.gov.in · meebhoomi.ap.gov.in · morth.nic.in · mudra.org.in · myaadhaar.uidai.gov.in · mylpg.in · nalsa.gov.in · nats.education.gov.in · navodaya.gov.in · ncbc.nic.in · ncdc.mohfw.gov.in · ncs.gov.in · neet.nta.nic.in · nios.ac.in · nlm.udyamimitra.in · npci.org.in · nppaindia.nic.in · nredcap.in · nrega.nic.in · parivahan.gov.in · passportindia.gov.in · pfrda.org.in · pgrs.ap.gov.in · pmay-urban.gov.in · pmaymis.gov.in · pmfby.gov.in · pmfme.mofpi.gov.in · pminternship.mca.gov.in · pmjdy.gov.in · pmkisan.gov.in · pmkusum.mnre.gov.in · pmmvy.wcd.gov.in · pmsuryaghar.gov.in · pmsvanidhi.mohua.gov.in · pmuy.gov.in · pmvidyalaxmi.co.in · pmvishwakarma.gov.in · polycetap.ap.gov.in · psc.ap.gov.in · railmadad.indianrailways.gov.in · realcraft.gov.in · registration.ap.gov.in · rera.ap.gov.in · rtionline.gov.in · samadhaan.msme.gov.in · samadhan.labour.gov.in · sancharsaathi.gov.in · sand.ap.gov.in · sarathi.parivahan.gov.in · scholarships.gov.in · serp.ap.gov.in · services.ecourts.gov.in · sfacindia.com · slprb.ap.gov.in · soilhealth.dac.gov.in · swavlambancard.gov.in · tdscpc.gov.in · transgender.dosje.gov.in · ttdevasthanams.ap.gov.in · udgam.rbi.org.in · udyamregistration.gov.in · unifiedportal-mem.epfindia.gov.in · uwin.mohfw.gov.in · vahan.parivahan.gov.in · voters.eci.gov.in
 
-ప్రతి గైడ్‌లో:
-• ఎవరు అర్హులు
-• తీసుకెళ్లాల్సిన పత్రాలు — టిక్ చేసే చెక్‌లిస్ట్‌తో
-• ఫీజు, లబ్ధి మొత్తాలు
-• మొదటి నుండి చివరి వరకు దశలవారీ పూర్తి మార్గదర్శి — ప్రతి క్లిక్, ప్రతి కౌంటర్
-• ఖర్చు ఉదాహరణ, సాధారణ సమస్యలు-పరిష్కారాలు, తర్వాత ఏం చేయాలి
-• ఎక్కడికి వెళ్లాలి — ఆఫీసు లేదా అధికారిక వెబ్‌సైట్
-• ఎంత సమయం పడుతుంది
-• మధ్యవర్తులు, సాధారణ తప్పుల నుండి జాగ్రత్తలు
-• అధికారిక లింకులు, హెల్ప్‌లైన్ నంబర్లు
-
-170కి పైగా గైడ్‌లు:
-⚖️ చట్టం & మీ హక్కులు — పోలీస్ సెక్షన్లు (BNS / పాత IPC) సులభంగా, అరెస్ట్ & బెయిల్, FIR నుండి కోర్టు కేసు వరకు, చెక్ బౌన్స్, విడాకులు & భరణం, భూ వివాదాలు, మరణించినవారి డబ్బు క్లెయిమ్
-🏠 భూమి & ఆస్తి — రిజిస్ట్రేషన్, డీడ్‌లో పేరు తప్పు, మ్యుటేషన్ (1B/అడంగల్), EC, 22A నిషేధిత భూమి, సబ్‌డివిజన్, వీలునామా/GPA
-📜 సర్టిఫికెట్లు — కుల, ఆదాయ, EWS, OBC, జనన & మరణ, వారసత్వ, వివాహ, పేరు మార్పు, వికలాంగ (SADAREM)
-🏥 ఆరోగ్యం — NTR వైద్య సేవ, ఆయుష్మాన్ భారత్, వయ వందన (70+), ముఖ్యమంత్రి సహాయ నిధి, 108/104
-☀️ విద్యుత్ — రూఫ్‌టాప్ సోలార్ సబ్సిడీ, కొత్త కనెక్షన్లు, బోరుబావి కనెక్షన్లు, ఎక్కువ బిల్లు, మీటర్, సరఫరా ఫిర్యాదులు
-🌾 రైతులు — అన్నదాత సుఖీభవ, PM-KISAN, పంట బీమా, MSPకి ధాన్యం, కౌలు రైతు కార్డు, KCC, సబ్సిడీలు
-🤝 సంక్షేమం — NTR భరోసా పెన్షన్లు, తల్లికి వందనం, ఉచిత బస్సు, గృహాలు, ఉపాధి హామీ, వృద్ధులు, మహిళలు
-🍚 రైస్ కార్డు, దీపం ఉచిత గ్యాస్, ఉజ్వల
-🎓 స్కాలర్‌షిప్‌లు, EAPCET / ICET / POLYCET / NEET ప్రవేశాలు, RTE ఉచిత సీట్లు, వసతి గృహాలు, PM ఇంటర్న్‌షిప్, ప్రభుత్వ ఉద్యోగాలు
-🚗 డ్రైవింగ్ లైసెన్స్, లారీ/బస్సు లైసెన్స్, RC బదిలీ, RC నుండి బ్యాంక్ రుణం తొలగింపు, ఆటో/లారీ పర్మిట్, ఫిట్‌నెస్, రోడ్డు పన్ను, చలాన్లు
-🛡️ అత్యవసర నంబర్లు, FIR, పోలీస్ వెరిఫికేషన్, PGRS ఫిర్యాదులు, RTI, వినియోగదారుల ఫిర్యాదులు, ఉచిత న్యాయ సహాయం
-🏦 జన్ ధన్, ₹20 బీమా, అటల్ పెన్షన్, PF విత్‌డ్రా, ఆదాయపు పన్ను రిటర్న్ & TDS రీఫండ్
-💼 ముద్ర, PMEGP, ఆహార ప్రాసెసింగ్ సబ్సిడీ, BC/SC/ST/మైనారిటీ కార్పొరేషన్ రుణాలు, డ్వాక్రా / SHG రుణాలు
-🛕 TTD & ఆలయ దర్శన బుకింగ్, సురక్షిత గల్ఫ్ ఉద్యోగాలు, NRI బీమా & ఆస్తి
-🪪 ఆధార్ (పోయిన కార్డు, పథకాల డబ్బుకు బ్యాంక్ లింక్, పిల్లల అప్‌డేట్, దుర్వినియోగ లాక్), PAN, పాస్‌పోర్ట్, ఓటర్ ID, డిజిలాకర్
-
-అందరి కోసం:
-🔊 తెలుగు లేదా ఇంగ్లీష్‌లో చదివి వినిపిస్తుంది
-📤 ఒక్క టచ్‌తో వాట్సాప్‌లో గైడ్ షేర్
-☆ అవసరమైన గైడ్‌లు సేవ్
-A+ పెద్ద అక్షరాలు
-💬 సాయం సహాయకుడు — మీ సమస్యను తెలుగు, ఇంగ్లీష్‌లో టైప్ చేయండి, సరైన గైడ్ పొందండి. ఇంటర్నెట్ లేకుండానే పనిచేస్తుంది
-
-సమాచారం ఎక్కడి నుండి:
-గైడ్‌లు అధికారిక ప్రభుత్వ మూలాల నుండి రాశాం, చివరిగా తనిఖీ చేసిన తేదీ చూపిస్తాయి. ముఖ్య మూలాలు:
-• ఆంధ్రప్రదేశ్ ప్రభుత్వం — https://www.ap.gov.in
-• AP మీసేవ — https://ap.meeseva.gov.in
-• గ్రామ & వార్డు సచివాలయాలు — https://gsws.ap.gov.in
-• AP రిజిస్ట్రేషన్ & స్టాంప్స్ — https://registration.ap.gov.in
-• మీభూమి — https://meebhoomi.ap.gov.in
-• జాతీయ ప్రభుత్వ సేవల పోర్టల్ — https://services.india.gov.in
-• మైస్కీమ్ — https://www.myscheme.gov.in
 నియమాలు, ఫీజులు మారుతుంటాయి. ఎవరికైనా డబ్బు ఇచ్చే ముందు ఆఫీసు లేదా అధికారిక వెబ్‌సైట్‌లో నిర్ధారించుకోండి.
-
-గోప్యత: సైన్ అప్ లేదు, ప్రకటనలు లేవు, ట్రాకింగ్ లేదు, డేటా సేకరణ లేదు. అన్నీ మీ ఫోన్‌లోనే.
 
 ---
 

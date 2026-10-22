@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { APP_VERSION, CONTACT_EMAIL, OFFICIAL_SOURCES, PRIVACY_URL } from '../src/config';
+import { useMemo } from 'react';
+import { APP_VERSION, CONTACT_EMAIL, PRIVACY_URL } from '../src/config';
+import { allSources } from '../src/sources';
 import { guides } from '../src/data/guides';
 import { ui } from '../src/i18n';
 import { useContent } from '../src/content';
@@ -10,6 +12,8 @@ import { colors, radius, space, type } from '../src/theme';
 export default function AboutScreen() {
   const content = useContent();
   const [upd, setUpd] = useState('');
+  const [allSrc, setAllSrc] = useState(false);
+  const sources = useMemo(() => allSources(), [content.version]);
   const { t } = useLang();
   return (
     <ScrollView contentContainerStyle={s.page}>
@@ -42,12 +46,18 @@ export default function AboutScreen() {
 
       <Card title={t(ui.sourcesTitle)}>
         <Text style={s.body}>{t(ui.sourcesBody)}</Text>
-        {OFFICIAL_SOURCES.map((src) => (
-          <Pressable key={src.url} onPress={() => Linking.openURL(src.url)} style={s.link}>
-            <Text style={s.linkText}>🔗 {src.label}</Text>
-            <Text style={s.url}>{src.url.replace('https://', '')}</Text>
+        <Text style={s.url}>{t(ui.sourcesCount).replace('{n}', String(sources.length))}</Text>
+        {(allSrc ? sources : sources.slice(0, 8)).map((src) => (
+          <Pressable key={src.host} onPress={() => Linking.openURL(src.url)} style={s.link}>
+            <Text style={s.linkText}>🔗 {src.host}</Text>
+            <Text style={s.url}>{src.label}</Text>
           </Pressable>
         ))}
+        {sources.length > 8 && (
+          <Pressable onPress={() => setAllSrc(!allSrc)} style={s.link}>
+            <Text style={s.linkText}>{allSrc ? t(ui.sourcesLess) : t(ui.sourcesAll).replace('{n}', String(sources.length))}</Text>
+          </Pressable>
+        )}
       </Card>
 
       <Card title={t(ui.privacyTitle)}>

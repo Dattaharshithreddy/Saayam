@@ -356,7 +356,7 @@ export const guides9: Guide[] = [
       b('Central low-interest loans (NBCFDC for BCs, NSFDC for SCs, NSTFDC for STs, NMDFC for minorities) also come through these same state corporations — ask about them.', 'కేంద్ర తక్కువ వడ్డీ రుణాలు (BCలకు NBCFDC, SCలకు NSFDC, STలకు NSTFDC, మైనారిటీలకు NMDFC) కూడా ఇవే రాష్ట్ర కార్పొరేషన్ల ద్వారా వస్తాయి — వాటి గురించి అడగండి.'),
       b('Nobody needs to be paid to get selected. Report bribe demands to ACB 14400.', 'ఎంపిక కావడానికి ఎవరికీ డబ్బు ఇవ్వనక్కర్లేదు. లంచం అడిగితే ACB 14400కు ఫిర్యాదు చేయండి.'),
     ],
-    links: [{ label: 'Village & Ward Secretariats', url: 'https://gsws.ap.gov.in' }],
+    links: [{ label: 'Government of Andhra Pradesh', url: 'https://www.ap.gov.in' }],
     lastChecked: CHECKED,
   },
 

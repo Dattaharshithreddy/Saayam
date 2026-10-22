@@ -49,7 +49,7 @@ export const lifeGuides: Guide[] = [
     whereToApply: [s('Village / Ward Secretariat; MeeSeva', 'గ్రామ / వార్డు సచివాలయం; మీసేవ')],
     timeline: s('Usually within 1–2 weeks.', 'సాధారణంగా 1–2 వారాల్లో.'),
     tips: [s('Apply well before counselling — late certificates are a common reason for losing seats.', 'కౌన్సెలింగ్‌కు చాలా ముందే దరఖాస్తు చేయండి — ఆలస్య సర్టిఫికెట్లు సీట్లు కోల్పోవడానికి సాధారణ కారణం.')],
-    links: [{ label: 'GSWS — Secretariat services', url: 'https://gsws.ap.gov.in' }],
+    links: [{ label: 'Government of Andhra Pradesh', url: 'https://www.ap.gov.in' }],
     lastChecked: CHECKED,
   },
 
