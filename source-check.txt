@@ -1,0 +1,161 @@
+200 https://apdpms.ap.gov.in
+200 https://apeasternpower.com
+200 https://aphc.gov.in
+200 https://apmepma.gov.in
+200 https://apnrts.ap.gov.in
+200 https://apnrts.ap.gov.in/insurance
+200 https://apspdcl.in
+200 https://apsrtconline.in
+200 https://bie.ap.gov.in
+200 https://bimabharosa.irdai.gov.in
+200 https://cap.apcfss.in
+200 https://cara.wcd.gov.in
+200 https://cdma.ap.gov.in
+200 https://cdma.ap.gov.in/services/payments
+200 https://cets.apsche.ap.gov.in
+200 https://cioins.co.in
+200 https://consumerhelpline.gov.in
+200 https://dahd.gov.in
+200 https://dc.crsorgi.gov.in
+200 https://digilocker.gov.in
+200 https://drntr.uhsap.in
+200 https://e-jagriti.gov.in
+200 https://emigrate.gov.in
+200 https://epfigms.gov.in
+200 https://eraktkosh.mohfw.gov.in
+200 https://eshram.gov.in
+200 https://foscos.fssai.gov.in
+200 https://gst.gov.in
+200 https://indiacode.nic.in
+200 https://indiapost.gov.in
+200 https://ipindia.gov.in
+200 https://jeevanpramaan.gov.in
+200 https://jnanabhumi.ap.gov.in
+200 https://morth.nic.in
+200 https://mylpg.in
+200 https://nalsa.gov.in
+200 https://ncdc.mohfw.gov.in
+200 https://ncs.gov.in
+200 https://neet.nta.nic.in
+200 https://nrega.nic.in
+200 https://parivahan.gov.in
+200 https://passportindia.gov.in
+200 https://pfrda.org.in
+200 https://pmay-urban.gov.in
+200 https://pmaymis.gov.in
+200 https://pmfby.gov.in
+200 https://pmfme.mofpi.gov.in
+200 https://pmjdy.gov.in
+200 https://pmkusum.mnre.gov.in
+200 https://pmuy.gov.in
+200 https://pmvidyalaxmi.co.in
+200 https://rtionline.gov.in
+200 https://sarathi.parivahan.gov.in
+200 https://scholarships.gov.in
+200 https://sfacindia.com
+200 https://swavlambancard.gov.in
+200 https://ttdevasthanams.ap.gov.in
+200 https://udyamregistration.gov.in
+200 https://unifiedportal-mem.epfindia.gov.in
+200 https://www.apeasternpower.com
+200 https://www.apspdcl.in
+200 https://www.apsrtconline.in
+200 https://www.cioins.co.in
+200 https://www.digilocker.gov.in
+200 https://www.gst.gov.in
+200 https://www.incometax.gov.in
+200 https://www.indiacode.nic.in
+200 https://www.indiapost.gov.in
+200 https://www.mylpg.in
+200 https://www.ncs.gov.in
+200 https://www.passportindia.gov.in
+200 https://www.pfrda.org.in
+200 https://www.swavlambancard.gov.in
+200 https://www.tdscpc.gov.in
+400 https://apprenticeshipindia.gov.in
+403 https://abha.abdm.gov.in
+403 https://beneficiary.nha.gov.in
+403 https://dgft.gov.in
+403 https://esanjeevani.mohfw.gov.in
+403 https://irctc.co.in
+403 https://jansamarth.in
+403 https://npci.org.in
+403 https://pmmvy.wcd.gov.in
+403 https://pmsuryaghar.gov.in
+403 https://sancharsaathi.gov.in
+403 https://soilhealth.dac.gov.in
+403 https://uwin.mohfw.gov.in
+403 https://www.apprenticeshipindia.gov.in
+403 https://www.dgft.gov.in
+403 https://www.iepf.gov.in
+403 https://www.irctc.co.in
+403 https://www.jansamarth.in
+403 https://www.npci.org.in
+404 https://pminternship.mca.gov.in
+406 https://voters.eci.gov.in
+curl: (28) Connection timed out after 24479 milliseconds 301 https://realcraft.gov.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://appointments.uidai.gov.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://cms.rbi.org.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://joinindianarmy.nic.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://pmsvanidhi.mohua.gov.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://psc.ap.gov.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://registration.ap.gov.in
+curl: (28) Connection timed out after 25000 milliseconds 000 https://slprb.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://ap.meeseva.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://apindustries.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://apopenschool.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://apsdma.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://aptemples.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://cybercrime.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://digitalpanchayat.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://echallan.parivahan.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://mudra.org.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://myaadhaar.uidai.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://nats.education.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://pgrs.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://pmvishwakarma.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://polycetap.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://railmadad.indianrailways.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://rera.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://samadhan.labour.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://sand.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://serp.ap.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://services.ecourts.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://transgender.dosje.gov.in
+curl: (28) Connection timed out after 25001 milliseconds 000 https://udgam.rbi.org.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://annadathasukhibhava.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://apcpdcl.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://bse.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://citizen.appolice.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://cse.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://meebhoomi.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://navodaya.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://nlm.udyamimitra.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://vahan.parivahan.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://www.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://www.apindustries.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://www.mudra.org.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://www.nios.ac.in
+curl: (28) Connection timed out after 25002 milliseconds 000 https://www.serp.ap.gov.in
+curl: (28) Connection timed out after 25002 milliseconds 302 https://apssdc.in
+curl: (28) Connection timed out after 25002 milliseconds 302 https://www.apssdc.in
+curl: (28) Connection timed out after 25003 milliseconds 000 https://nios.ac.in
+curl: (28) Operation timed out after 18018 milliseconds with 0 bytes received 302 https://apcmrf.ap.gov.in
+curl: (35) OpenSSL/3.0.13: error:0A000152:SSL routines::unsafe legacy renegotiation disabled 000 https://madad.gov.in
+curl: (35) OpenSSL/3.0.13: error:0A000152:SSL routines::unsafe legacy renegotiation disabled 000 https://www.madad.gov.in
+curl: (35) Recv failure: Connection reset by peer 000 https://samadhaan.msme.gov.in
+curl: (6) Could not resolve host: aissee.nta.nic.in 000 https://aissee.nta.nic.in
+curl: (6) Could not resolve host: bocwwb.ap.gov.in 000 https://bocwwb.ap.gov.in
+curl: (6) Could not resolve host: epdsap.ap.gov.in 000 https://epdsap.ap.gov.in
+curl: (6) Could not resolve host: incometax.gov.in 000 https://incometax.gov.in
+curl: (6) Could not resolve host: kviconline.gov.in 000 https://kviconline.gov.in
+curl: (6) Could not resolve host: nppaindia.nic.in 000 https://nppaindia.nic.in
+curl: (6) Could not resolve host: tdscpc.gov.in 000 https://tdscpc.gov.in
+curl: (6) Could not resolve host: www.kviconline.gov.in 000 https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp
+curl: (6) Could not resolve host: www.nppaindia.nic.in 000 https://www.nppaindia.nic.in
+e connection to it. To learn more about this situation and how to fix it, please visit the web page mentioned above. 000 https://iepf.gov.in
+e connection to it. To learn more about this situation and how to fix it, please visit the web page mentioned above. 000 https://jansuraksha.gov.in
+e connection to it. To learn more about this situation and how to fix it, please visit the web page mentioned above. 000 https://ncbc.nic.in
+e connection to it. To learn more about this situation and how to fix it, please visit the web page mentioned above. 000 https://nredcap.in
+e connection to it. To learn more about this situation and how to fix it, please visit the web page mentioned above. 000 https://pmkisan.gov.in
