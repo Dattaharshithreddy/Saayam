@@ -1,0 +1,32 @@
+# Checks every source link from outside India (GitHub runners are in the US, like Play reviewers).
+name: Check source links
+on:
+  push:
+    branches: [source-check]
+    paths: [scripts/source-urls.txt, .github/workflows/check-sources.yml]
+permissions:
+  contents: write
+jobs:
+  check:
+    if: "!contains(github.event.head_commit.message, 'results')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check
+        run: |
+          UA="Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Mobile Safari/537.36"
+          check() {
+            for i in 1 2; do
+              r=$(curl -sS -L -A "$UA" --max-time 25 -o /dev/null -w "%{http_code}" "$1" 2>&1 | tail -c 120 | tr '\n' ' ')
+              [[ "$r" =~ ^[23] ]] && break; sleep 3
+            done
+            echo "$r $1"
+          }
+          export -f check; export UA
+          { cat scripts/source-urls.txt; sed -E 's#^(https?://[^/]+).*#\1#' scripts/source-urls.txt | sed -E 's#://www\.#://#'; } | sort -u > all.txt
+          xargs -P 12 -I{} bash -c 'check "{}"' < all.txt | sort > source-check.txt
+          cat source-check.txt
+      - name: Save
+        run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add source-check.txt && git commit -m "source check results" && git push
