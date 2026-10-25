@@ -2,7 +2,7 @@
   "expo": {
     "name": "Saayam",
     "slug": "saayam",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,7 +24,7 @@
       "predictiveBackGestureEnabled": false,
       "package": "in.saayam.app",
       "softwareKeyboardLayoutMode": "pan",
-      "versionCode": 5,
+      "versionCode": 6,
       "blockedPermissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",

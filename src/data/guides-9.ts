@@ -266,7 +266,7 @@ export const guides9: Guide[] = [
       b('Successful units can get a second loan (up to ₹1 crore) with 15–20% subsidy for expansion.', 'విజయవంతమైన యూనిట్లు విస్తరణకు 15–20% సబ్సిడీతో రెండో రుణం (₹1 కోటి వరకు) పొందవచ్చు.'),
       b('Not allowed: liquor, tobacco, meat processing of some kinds, and some other negative-list activities.', 'అనుమతి లేదు: మద్యం, పొగాకు, కొన్ని రకాల మాంసం ప్రాసెసింగ్, ఇతర నెగెటివ్-లిస్ట్ కార్యకలాపాలు.'),
     ],
-    links: [{ label: 'PMEGP e-portal', url: 'https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp' }],
+    links: [{ label: 'PMEGP on myScheme', url: 'https://www.myscheme.gov.in/schemes/pmegp' }],
     lastChecked: CHECKED,
   },
   {

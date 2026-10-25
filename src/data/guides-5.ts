@@ -73,7 +73,7 @@ export const guides5: Guide[] = [
       b('A lapsed registration means no benefits — renew on time.', 'నమోదు గడువు ముగిస్తే ప్రయోజనాలు రావు — సమయానికి రెన్యువల్ చేయండి.'),
       b('Also register on e-Shram (free) for extra accident insurance.', 'అదనపు ప్రమాద బీమా కోసం ఇ-శ్రమ్‌లో కూడా (ఉచితం) నమోదు చేయండి.'),
     ],
-    links: [{ label: 'AP BOCW Welfare Board', url: 'https://bocwwb.ap.gov.in' }],
+    links: [{ label: 'AP BOCW Welfare Board', url: 'https://apbocwwb.ap.nic.in' }],
     lastChecked: CHECKED,
   },
   {

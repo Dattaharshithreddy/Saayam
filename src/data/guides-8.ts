@@ -209,7 +209,7 @@ export const guides8: Guide[] = [
       b('Do not pay "middlemen" who promise to speed up embassy work.', 'రాయబార కార్యాలయ పని వేగంగా చేయిస్తామనే "మధ్యవర్తులకు" డబ్బు ఇవ్వకండి.'),
     ],
     links: [
-      { label: 'MADAD (MEA)', url: 'https://www.madad.gov.in' },
+      { label: 'Ministry of External Affairs', url: 'https://www.mea.gov.in' },
       { label: 'APNRTS', url: 'https://apnrts.ap.gov.in' },
     ],
     helpline: { label: b('APNRTS 24×7', 'APNRTS 24×7'), number: '+918632340678' },

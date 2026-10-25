@@ -92,7 +92,7 @@ export const more2Guides: Guide[] = [
       {
         title: s('Sainik School (Class 6 and 9)', 'సైనిక్ స్కూల్ (6, 9 తరగతులు)'),
         steps: [
-          s('Apply for AISSEE on aissee.nta.nic.in (usually October–December); girls can apply for Class 6.', 'aissee.nta.nic.inలో AISSEEకి దరఖాస్తు (సాధారణంగా అక్టోబర్–డిసెంబర్); 6వ తరగతికి అమ్మాయిలు కూడా.'),
+          s('Apply for AISSEE on exams.nta.nic.in/AISSEE (usually October–December); girls can apply for Class 6.', 'exams.nta.nic.in/AISSEEలో AISSEEకి దరఖాస్తు (సాధారణంగా అక్టోబర్–డిసెంబర్); 6వ తరగతికి అమ్మాయిలు కూడా.'),
           s('Exam usually in January; then medical exam and counselling. AP has Sainik School Korukonda (Vizianagaram) and Kalikiri (Annamayya).', 'పరీక్ష సాధారణంగా జనవరిలో; తర్వాత వైద్య పరీక్ష, కౌన్సెలింగ్. APలో సైనిక్ స్కూల్ కోరుకొండ (విజయనగరం), కలికిరి (అన్నమయ్య).'),
           s('Fees are subsidised; state scholarships help eligible families.', 'ఫీజులు రాయితీతో; అర్హ కుటుంబాలకు రాష్ట్ర స్కాలర్‌షిప్‌లు.'),
         ],
@@ -114,10 +114,10 @@ export const more2Guides: Guide[] = [
       },
     ],
     costExample: s('NMMS winner: ₹12,000 × 4 years = ₹48,000 for Classes 9–12.', 'NMMS విజేత: 9–12 తరగతులకు ₹12,000 × 4 సంవత్సరాలు = ₹48,000.'),
-    whereToApply: [s('navodaya.gov.in; aissee.nta.nic.in; KVS admission portal; your school (NMMS)', 'navodaya.gov.in; aissee.nta.nic.in; KVS ప్రవేశ పోర్టల్; మీ స్కూల్ (NMMS)')],
+    whereToApply: [s('navodaya.gov.in; exams.nta.nic.in/AISSEE; KVS admission portal; your school (NMMS)', 'navodaya.gov.in; exams.nta.nic.in/AISSEE; KVS ప్రవేశ పోర్టల్; మీ స్కూల్ (NMMS)')],
     timeline: s('Each is once a year — check the month above and set a reminder.', 'ప్రతిదీ ఏడాదికి ఒకసారి — పై నెల చూసి రిమైండర్ పెట్టుకోండి.'),
     tips: [s('Coaching centres are not required — free model papers are on the official sites.', 'కోచింగ్ సెంటర్లు అవసరం లేదు — అధికారిక సైట్లలో ఉచిత మోడల్ పేపర్లు ఉన్నాయి.')],
-    links: [{ label: 'Navodaya Vidyalaya Samiti', url: 'https://navodaya.gov.in' }, { label: 'AISSEE (NTA)', url: 'https://aissee.nta.nic.in' }],
+    links: [{ label: 'Navodaya Vidyalaya Samiti', url: 'https://navodaya.gov.in' }, { label: 'AISSEE (NTA)', url: 'https://exams.nta.nic.in/AISSEE/' }],
     lastChecked: CHECKED,
   },
 
@@ -231,7 +231,7 @@ export const more2Guides: Guide[] = [
     whereToApply: [s('104; DMHO office; e-jagriti.gov.in; NPPA 1800-111-255', '104; DMHO కార్యాలయం; e-jagriti.gov.in; NPPA 1800-111-255')],
     timeline: s('104 complaints: days to weeks. Consumer cases: months.', '104 ఫిర్యాదులు: రోజుల నుండి వారాలు. వినియోగదారుల కేసులు: నెలలు.'),
     tips: [s('Photograph every bill and prescription as you get it — originals get lost during long admissions.', 'ప్రతి బిల్లు, ప్రిస్క్రిప్షన్ అందినప్పుడే ఫోటో తీయండి — ఎక్కువ రోజుల అడ్మిషన్‌లో అసలు పత్రాలు పోతాయి.')],
-    links: [{ label: 'NPPA — Pharma Jan Samadhan', url: 'https://www.nppaindia.nic.in' }, { label: 'e-Jagriti consumer cases', url: 'https://e-jagriti.gov.in' }],
+    links: [{ label: 'NPPA (Dept of Pharmaceuticals)', url: 'https://www.pharma-dept.gov.in/national-pharmaceutical-pricing-authority' }, { label: 'e-Jagriti consumer cases', url: 'https://e-jagriti.gov.in' }],
     lastChecked: CHECKED,
   },
 
@@ -874,7 +874,7 @@ export const more2Guides: Guide[] = [
 
 export const more2Dir: XDir[] = [
   D('ssc-inter-revaluation', 'education', ['Recounting / reverification within a week of results; supplementary exams', 'ఫలితాల తర్వాత వారంలో రీకౌంటింగ్ / రీవెరిఫికేషన్; సప్లిమెంటరీ'], ['bse.ap.gov.in; bie.ap.gov.in', 'bse.ap.gov.in; bie.ap.gov.in']),
-  D('school-admissions', 'education', ['Navodaya, Sainik, KV, Gurukulam; NMMS ₹12,000 / year', 'నవోదయ, సైనిక్, KV, గురుకులం; NMMS ఏడాదికి ₹12,000'], ['navodaya.gov.in; aissee.nta.nic.in', 'navodaya.gov.in; aissee.nta.nic.in']),
+  D('school-admissions', 'education', ['Navodaya, Sainik, KV, Gurukulam; NMMS ₹12,000 / year', 'నవోదయ, సైనిక్, KV, గురుకులం; NMMS ఏడాదికి ₹12,000'], ['navodaya.gov.in; exams.nta.nic.in/AISSEE', 'navodaya.gov.in; exams.nta.nic.in/AISSEE']),
   D('dog-bite-rabies', 'health', ['Wash 15 min; free anti-rabies vaccine same day', '15 నిమిషాలు కడగండి; అదే రోజు ఉచిత రేబిస్ టీకా'], ['PHC / government hospital', 'PHC / ప్రభుత్వ ఆసుపత్రి']),
   D('hospital-complaints', 'health', ['Overcharging, records, negligence, medicine prices', 'అధిక వసూలు, రికార్డులు, నిర్లక్ష్యం, మందుల ధరలు'], ['104; DMHO; consumer commission', '104; DMHO; వినియోగదారుల కమిషన్']),
   D('adoption', 'welfare', ['Legal adoption only through CARA', 'CARA ద్వారానే చట్టబద్ధ దత్తత'], ['cara.wcd.gov.in', 'cara.wcd.gov.in']),

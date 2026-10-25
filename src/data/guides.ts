@@ -470,7 +470,7 @@ const baseGuides: Guide[] = [
     ],
     links: [
       { label: 'AP MeeSeva', url: 'https://ap.meeseva.gov.in' },
-      { label: 'AP ePDS', url: 'https://epdsap.ap.gov.in' },
+      { label: 'Government of Andhra Pradesh', url: 'https://www.ap.gov.in' },
     ],
     lastChecked: '2026-10-19',
   },
